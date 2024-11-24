@@ -9,7 +9,7 @@ import static pboproject.Config.writeLog;
 
 /**
  *
- * @author Makhluk Hidup
+ * @author Kelompok 5
  */
 public class FLogin extends javax.swing.JFrame {
 
@@ -32,27 +32,26 @@ public class FLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        txtPassword = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
+        txtPassword = new javax.swing.JPasswordField();
         btKeluar = new javax.swing.JButton();
         btLogin = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        setAlwaysOnTop(true);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setToolTipText("");
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtPassword.setBackground(new java.awt.Color(255, 255, 204));
-        txtPassword.setBorder(null);
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(474, 205, 178, 25));
-
         txtEmail.setBackground(new java.awt.Color(255, 255, 204));
         txtEmail.setBorder(null);
         jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 158, 178, 25));
+
+        txtPassword.setBackground(new java.awt.Color(255, 255, 204));
+        txtPassword.setBorder(null);
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 205, 178, 25));
 
         btKeluar.setBackground(new java.awt.Color(102, 102, 102));
         btKeluar.setForeground(new java.awt.Color(255, 255, 255));
@@ -111,8 +110,8 @@ public class FLogin extends javax.swing.JFrame {
                 if (apakahAda > 0) {
                     //Tindakan jika pengguna ditemukan
                     JOptionPane.showMessageDialog(null, "Selamat datang");
-                    FSplash formUtama = new FSplash();
-                    formUtama.setVisible(true);
+                    FMain formMain = new FMain();
+                    formMain.setVisible(true);
                     dispose();
                 } else {
                     //Tindakan jika pengguna tidak ditemukan
@@ -178,6 +177,6 @@ public class FLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtPassword;
+    private javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables
 }

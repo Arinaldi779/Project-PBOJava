@@ -1,3 +1,24 @@
 2024-11-23 16:39:09-Koneksi berhasil ke database
 2024-11-23 16:39:21-Koneksi gagal : Table 'db_pbo.login' doesn't exist
 2024-11-23 16:41:04-Koneksi berhasil ke database
+2024-11-24 14:49:06-Koneksi Gagal:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-24 14:49:18-Koneksi Gagal:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-24 14:49:31-Koneksi Gagal:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-24 14:49:57-Koneksi Gagal:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-24 14:51:17-Koneksi berhasil ke database
+2024-11-24 14:55:06-Koneksi berhasil ke database
+2024-11-24 15:29:15-Koneksi berhasil ke database
+2024-11-24 15:30:10-Koneksi berhasil ke database
+2024-11-24 17:59:04-Koneksi berhasil ke database
+2024-11-24 18:00:29-Koneksi berhasil ke database
+2024-11-24 19:34:18-Koneksi berhasil ke database
+2024-11-24 19:39:35-Koneksi berhasil ke database
+2024-11-24 19:57:47-Koneksi berhasil ke database
