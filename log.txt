@@ -1,6 +1,7 @@
 2024-11-23 16:39:09-Koneksi berhasil ke database
 2024-11-23 16:39:21-Koneksi gagal : Table 'db_pbo.login' doesn't exist
 2024-11-23 16:41:04-Koneksi berhasil ke database
+<<<<<<< HEAD
 2024-11-24 14:49:06-Koneksi Gagal:Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -22,3 +23,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-24 19:34:18-Koneksi berhasil ke database
 2024-11-24 19:39:35-Koneksi berhasil ke database
 2024-11-24 19:57:47-Koneksi berhasil ke database
+=======
+2024-11-23 17:41:37-Koneksi Gagal:No suitable driver found for jdbc:mysql://localhost:3306/gudang_computer
+2024-11-23 19:45:31-Koneksi Gagal:No suitable driver found for jdbc:mysql://localhost:3306/gudang_computer
+>>>>>>> 8bf5ad5c576c19116c297014d07ea3c6ebe7dc5b

@@ -16,7 +16,11 @@ public class FSplash extends javax.swing.JFrame {
     public FSplash() {
         setUndecorated(true);  // Menghilangkan dekorasi jendela (termasuk tombol close, minimize, dan maximize)
         initComponents();
+<<<<<<< HEAD
         setLocationRelativeTo(null); // Agar jendela muncul di tengah layar
+=======
+        setLocationRelativeTo(null);
+>>>>>>> 8bf5ad5c576c19116c297014d07ea3c6ebe7dc5b
     }
 
     /**
@@ -29,14 +33,21 @@ public class FSplash extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+<<<<<<< HEAD
         bar = new javax.swing.JProgressBar();
         lblProgress = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+=======
+        progres = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        bar = new javax.swing.JProgressBar();
+>>>>>>> 8bf5ad5c576c19116c297014d07ea3c6ebe7dc5b
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+<<<<<<< HEAD
         jPanel1.add(bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 305, 460, 50));
 
         lblProgress.setForeground(new java.awt.Color(0, 0, 0));
@@ -47,6 +58,17 @@ public class FSplash extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 460));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 450));
+=======
+
+        progres.setText("0 %");
+        jPanel1.add(progres, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 400, 30, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\OneDrive\\Documents\\foto neatbeans\\splash loginn.png")); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, 460, 50));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+>>>>>>> 8bf5ad5c576c19116c297014d07ea3c6ebe7dc5b
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -58,6 +80,7 @@ public class FSplash extends javax.swing.JFrame {
         FSplash sp = new FSplash(); // Perbaikan tanda titik koma
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+<<<<<<< HEAD
                 sp.setVisible(true);
             }
         });
@@ -74,12 +97,32 @@ public class FSplash extends javax.swing.JFrame {
         FLogin formLogin = new FLogin();
         formLogin.setVisible(true);
         sp.dispose(); // Hapus splash screen dari memori
+=======
+                 sp.setVisible(true);
+        }
+    });
+    try {
+        for (int i = 0; i <= 100; i++) { // Perbaikan kondisi loop
+            Thread.sleep(90); // Delay 90 ms
+            sp.bar.setValue(i); // Progress bar dinamis
+            sp.progres.setText(Integer.toString(i) + " %");
+        }
+    } catch (Exception e) {
+        e.printStackTrace(); // Opsional untuk debugging
+>>>>>>> 8bf5ad5c576c19116c297014d07ea3c6ebe7dc5b
     }
+    sp.setVisible(false); // Sembunyikan splash screen
+    sp.dispose(); // Hapus splash screen dari memori
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JProgressBar bar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+<<<<<<< HEAD
     private javax.swing.JLabel lblProgress;
+=======
+    private javax.swing.JLabel progres;
+>>>>>>> 8bf5ad5c576c19116c297014d07ea3c6ebe7dc5b
     // End of variables declaration//GEN-END:variables
 }
