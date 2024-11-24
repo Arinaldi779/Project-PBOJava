@@ -17,7 +17,9 @@ public class FLogin extends javax.swing.JFrame {
      * Creates new form FLogin
      */
     public FLogin() {
+        setUndecorated(true);  // Menghilangkan dekorasi jendela (termasuk tombol close, minimize, dan maximize)
         initComponents();
+        setLocationRelativeTo(null); // Agar jendela muncul di tengah layar
     }
 
     /**
@@ -37,17 +39,20 @@ public class FLogin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setAlwaysOnTop(true);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setToolTipText("");
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtPassword.setBackground(new java.awt.Color(255, 255, 204));
         txtPassword.setBorder(null);
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 212, 178, 25));
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(474, 205, 178, 25));
 
         txtEmail.setBackground(new java.awt.Color(255, 255, 204));
         txtEmail.setBorder(null);
-        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 165, 178, 25));
+        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 158, 178, 25));
 
         btKeluar.setBackground(new java.awt.Color(102, 102, 102));
         btKeluar.setForeground(new java.awt.Color(255, 255, 255));
@@ -58,7 +63,7 @@ public class FLogin extends javax.swing.JFrame {
                 btKeluarActionPerformed(evt);
             }
         });
-        jPanel1.add(btKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(573, 250, 90, 40));
+        jPanel1.add(btKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, 90, 40));
 
         btLogin.setBackground(new java.awt.Color(0, 102, 153));
         btLogin.setForeground(new java.awt.Color(255, 255, 255));
@@ -74,10 +79,10 @@ public class FLogin extends javax.swing.JFrame {
                 btLoginActionPerformed(evt);
             }
         });
-        jPanel1.add(btLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 250, 80, 40));
+        jPanel1.add(btLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, 90, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Page Login.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, 438));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 438));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 430));
 
@@ -91,38 +96,38 @@ public class FLogin extends javax.swing.JFrame {
     private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
         // TODO add your handling code here:
         // TODO add your handling code here:
-        String email =txtEmail.getText();
-        String password =txtPassword.getText();
+        String email = txtEmail.getText();
+        String password = txtPassword.getText();
         String SQL = "SELECT COUNT(*) AS apakahAda FROM login WHERE email = ? AND PASSWORD = ?";
         try {
-        // Menginisialisasi koneksi menggunakan konfigurasi di COnfig
-        java.sql.Connection conn = (java.sql.Connection) Config.configDB();
-        java.sql.PreparedStatement pst = conn.prepareStatement(SQL);
-        pst.setString(1, email); // Mengatur Parameter Pertama untuk email
-        pst.setString(2, password); // Mengatur Parameter Kedua untuk password
-        java.sql.ResultSet rs = pst.executeQuery();
-        if (rs.next()) {
-            int apakahAda =  rs.getInt("apakahAda");
-            if (apakahAda > 0) {
-                //Tindakan jika pengguna ditemukan
-                JOptionPane.showMessageDialog(null, "Selamat datang");
-                FSplash formUtama = new FSplash();
-                formUtama.setVisible(true);
-                dispose();
-            }else {
-                //Tindakan jika pengguna tidak ditemukan
-                JOptionPane.showMessageDialog(null, "SIlahkan masukkan kembali email dan password");
+            // Menginisialisasi koneksi menggunakan konfigurasi di COnfig
+            java.sql.Connection conn = (java.sql.Connection) Config.configDB();
+            java.sql.PreparedStatement pst = conn.prepareStatement(SQL);
+            pst.setString(1, email); // Mengatur Parameter Pertama untuk email
+            pst.setString(2, password); // Mengatur Parameter Kedua untuk password
+            java.sql.ResultSet rs = pst.executeQuery();
+            if (rs.next()) {
+                int apakahAda = rs.getInt("apakahAda");
+                if (apakahAda > 0) {
+                    //Tindakan jika pengguna ditemukan
+                    JOptionPane.showMessageDialog(null, "Selamat datang");
+                    FSplash formUtama = new FSplash();
+                    formUtama.setVisible(true);
+                    dispose();
+                } else {
+                    //Tindakan jika pengguna tidak ditemukan
+                    JOptionPane.showMessageDialog(null, "SIlahkan masukkan kembali email dan password");
+                }
             }
-        }
         } catch (java.sql.SQLException e) {
-            JOptionPane.showMessageDialog(null, "Terjadi kegagalan : "+e.getMessage());
-            writeLog("Koneksi gagal : "+ e.getMessage());// Jika koneksi gagal
+            JOptionPane.showMessageDialog(null, "Terjadi kegagalan : " + e.getMessage());
+            writeLog("Koneksi gagal : " + e.getMessage());// Jika koneksi gagal
         }
     }//GEN-LAST:event_btLoginActionPerformed
 
     private void btKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btKeluarActionPerformed
         // TODO add your handling code here:
-        int response = JOptionPane.showConfirmDialog(this, 
+        int response = JOptionPane.showConfirmDialog(this,
                 "Apakah anda yakin ingin keluar",
                 "Konfirmasi keluar",
                 JOptionPane.YES_NO_OPTION,
