@@ -15,6 +15,7 @@ public class FSplash extends javax.swing.JFrame {
      */
     public FSplash() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -26,18 +27,24 @@ public class FSplash extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        progres = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        bar = new javax.swing.JProgressBar();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        progres.setText("0 %");
+        jPanel1.add(progres, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 400, 30, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\OneDrive\\Documents\\foto neatbeans\\splash loginn.png")); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, 460, 50));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -46,37 +53,29 @@ public class FSplash extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FSplash.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FSplash.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FSplash.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FSplash.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
+        FSplash sp = new FSplash(); // Perbaikan tanda titik koma
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FSplash().setVisible(true);
-            }
-        });
+                 sp.setVisible(true);
+        }
+    });
+    try {
+        for (int i = 0; i <= 100; i++) { // Perbaikan kondisi loop
+            Thread.sleep(90); // Delay 90 ms
+            sp.bar.setValue(i); // Progress bar dinamis
+            sp.progres.setText(Integer.toString(i) + " %");
+        }
+    } catch (Exception e) {
+        e.printStackTrace(); // Opsional untuk debugging
     }
+    sp.setVisible(false); // Sembunyikan splash screen
+    sp.dispose(); // Hapus splash screen dari memori
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JProgressBar bar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel progres;
     // End of variables declaration//GEN-END:variables
 }
