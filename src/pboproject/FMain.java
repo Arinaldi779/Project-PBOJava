@@ -4,7 +4,10 @@
  */
 package pboproject;
 
+import com.mysql.cj.xdevapi.Statement;
+import java.sql.Connection;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 import static pboproject.Config.writeLog;
 
 /**
@@ -16,10 +19,71 @@ public class FMain extends javax.swing.JFrame {
     /**
      * Creates new form FMain
      */
+    private void load_table() {
+// membuat tampilan model tabel
+        DefaultTableModel model = new DefaultTableModel();
+        model.addColumn("NO");
+        model.addColumn("ID Barang");
+        model.addColumn("Nama Barang");
+        model.addColumn("Type");
+        model.addColumn("Stok");
+        model.addColumn("Harga");
+        model.addColumn("Tanggal Masuk");
+
+        //menampilkan data database kedalam tabel
+        try {
+            int no = 1;
+            String sql = "select * from barang";
+            java.sql.Connection conn = (Connection) Config.configDB();
+            java.sql.Statement stm = conn.createStatement();
+            java.sql.ResultSet res = stm.executeQuery(sql);
+            while (res.next()) {
+                model.addRow(new Object[]{no++, res.getString(1), res.getString(2),
+                    res.getString(3), res.getString(4), res.getString(5), res.getString(6)});
+            }
+            tblBarang.setModel(model);
+            writeLog("Tampilkan data ke Frame " + getClass().getSimpleName());
+        } catch (Exception e) {
+            writeLog("Data tidak dapat ditampilkan : " + e.getMessage());
+        }
+    }
+
     public FMain() {
         setUndecorated(true);  // Menghilangkan dekorasi jendela (termasuk tombol close, minimize, dan maximize)
         initComponents();
         setLocationRelativeTo(null); // Agar jendela muncul di tengah layar
+        load_table(); // masukan code berikut
+        loadComboBox();
+    }
+
+    private void bersihkan() {
+        txtIdBarang.setText(null);
+        txtNamaBarang.setText(null);
+        txtStok.setText(null);
+        txtHarga.setText(null);
+        cbType.setSelectedIndex(0);
+        txtIdBarang.requestFocus();
+    }
+
+    private void loadComboBox() {
+        try {
+            int no = 1;
+            String sql = "select * from type";
+            java.sql.Connection conn = (Connection) Config.configDB();
+            java.sql.Statement stm = conn.createStatement();
+            java.sql.ResultSet res = stm.executeQuery(sql);
+            // Bersihkan ComboBox sebelum menambahkan data
+            cbType.removeAllItems();
+            cbType.addItem("-- Pilih Type --"); // Placeholder awal
+
+            while (res.next()) {
+                String data = res.getString("kategori");
+                cbType.addItem(data);
+            }
+            Config.writeLog("ComboBox berhasil dimuat dengan data.");
+        } catch (Exception e) {
+            Config.writeLog("Error saat memuat ComboBox: " + e.getMessage());
+        }
     }
 
     /**
@@ -43,6 +107,10 @@ public class FMain extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         btLogout = new javax.swing.JButton();
+        btSubmit = new javax.swing.JButton();
+        btHapus = new javax.swing.JButton();
+        btEdit = new javax.swing.JButton();
+        btClear = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -90,7 +158,7 @@ public class FMain extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblBarang);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 520, 210));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 520, 160));
 
         jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 130, 80));
@@ -111,7 +179,41 @@ public class FMain extends javax.swing.JFrame {
                 btLogoutActionPerformed(evt);
             }
         });
-        jPanel1.add(btLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 447, 110, 35));
+        jPanel1.add(btLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 445, 110, 35));
+
+        btSubmit.setBackground(new java.awt.Color(255, 255, 204));
+        btSubmit.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
+        btSubmit.setForeground(new java.awt.Color(0, 0, 0));
+        btSubmit.setText("Submit");
+        btSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btSubmitActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, -1, -1));
+
+        btHapus.setBackground(new java.awt.Color(255, 255, 204));
+        btHapus.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
+        btHapus.setForeground(new java.awt.Color(0, 0, 0));
+        btHapus.setText("Hapus");
+        jPanel1.add(btHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, -1, -1));
+
+        btEdit.setBackground(new java.awt.Color(255, 255, 204));
+        btEdit.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
+        btEdit.setForeground(new java.awt.Color(0, 0, 0));
+        btEdit.setText("Edit");
+        jPanel1.add(btEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, -1, -1));
+
+        btClear.setBackground(new java.awt.Color(255, 255, 204));
+        btClear.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
+        btClear.setForeground(new java.awt.Color(0, 0, 0));
+        btClear.setText("Clear");
+        btClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btClearActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Form Barang1.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1920, 1080));
@@ -139,6 +241,33 @@ public class FMain extends javax.swing.JFrame {
             dispose(); // Tutup form FMain
         }
     }//GEN-LAST:event_btLogoutActionPerformed
+
+    private void btClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btClearActionPerformed
+        // TODO add your handling code here:
+        bersihkan();
+    }//GEN-LAST:event_btClearActionPerformed
+
+    private void btSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSubmitActionPerformed
+        // TODO add your handling code here:
+        try {
+            String sql = "INSERT INTO barang VALUES "
+                    + "('" + txtIdBarang.getText()
+                    + "','" + txtNamaBarang.getText()
+                    + "','" + cbType.getSelectedItem()
+                    + "','" + txtStok.getText()
+                    + "','" + txtHarga.getText() + "')";
+            java.sql.Connection conn = (Connection) Config.configDB();
+            java.sql.PreparedStatement pst = conn.prepareStatement(sql);
+            pst.execute();
+            JOptionPane.showMessageDialog(null, "Penyimpanan Data Berhasil");
+            writeLog("Penyimpanan Data Berhasil dengan NIM " + txtIdBarang.getText());
+            load_table();
+            bersihkan();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+            writeLog("Data gagal disimpan : " + e.getMessage());
+        }
+    }//GEN-LAST:event_btSubmitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,7 +305,11 @@ public class FMain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btClear;
+    private javax.swing.JButton btEdit;
+    private javax.swing.JButton btHapus;
     private javax.swing.JButton btLogout;
+    private javax.swing.JButton btSubmit;
     private javax.swing.JComboBox<String> cbType;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
