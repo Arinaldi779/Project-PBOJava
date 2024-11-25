@@ -6,9 +6,12 @@ package pboproject;
 
 import com.mysql.cj.xdevapi.Statement;
 import java.sql.Connection;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import static pboproject.Config.writeLog;
+import pboproject.Kategori;
+import java.time.Instant;
 
 /**
  *
@@ -19,6 +22,8 @@ public class FMain extends javax.swing.JFrame {
     /**
      * Creates new form FMain
      */
+    ArrayList<Kategori> arrKategori = new ArrayList<>();
+
     private void load_table() {
 // membuat tampilan model tabel
         DefaultTableModel model = new DefaultTableModel();
@@ -33,7 +38,7 @@ public class FMain extends javax.swing.JFrame {
         //menampilkan data database kedalam tabel
         try {
             int no = 1;
-            String sql = "select * from barang";
+            String sql = "select * from v_barangtype";
             java.sql.Connection conn = (Connection) Config.configDB();
             java.sql.Statement stm = conn.createStatement();
             java.sql.ResultSet res = stm.executeQuery(sql);
@@ -54,6 +59,16 @@ public class FMain extends javax.swing.JFrame {
         setLocationRelativeTo(null); // Agar jendela muncul di tengah layar
         load_table(); // masukan code berikut
         loadComboBox();
+        showData(null);
+    }
+
+    private void showData(String cari) {
+        String sql;
+        if (cari == null) {
+            sql = "select * from";
+        } else {
+
+        }
     }
 
     private void bersihkan() {
@@ -63,6 +78,16 @@ public class FMain extends javax.swing.JFrame {
         txtHarga.setText(null);
         cbType.setSelectedIndex(0);
         txtIdBarang.requestFocus();
+    }
+
+    // Metode untuk mendapatkan ID kategori berdasarkan nama kategori
+    private int getIdKategoriByNama(String namaKategori) {
+        for (Kategori kategori : arrKategori) {
+            if (kategori.getKategori().equals(namaKategori)) {
+                return kategori.getId_type(); // Kembalikan ID jika nama cocok
+            }
+        }
+        return 0; // Jika tidak ditemukan, kembalikan nilai default (0)
     }
 
     private void loadComboBox() {
@@ -77,8 +102,11 @@ public class FMain extends javax.swing.JFrame {
             cbType.addItem("-- Pilih Type --"); // Placeholder awal
 
             while (res.next()) {
-                String data = res.getString("kategori");
-                cbType.addItem(data);
+
+                int idType = res.getInt("id_type");
+                String kategori = res.getString("kategori");
+                arrKategori.add(new Kategori(idType, kategori)); // Tambahkan ke array kategori
+                cbType.addItem(kategori); // Tambahkan nama kategori ke ComboBox
             }
             Config.writeLog("ComboBox berhasil dimuat dengan data.");
         } catch (Exception e) {
@@ -158,7 +186,7 @@ public class FMain extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblBarang);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 520, 160));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 560, 160));
 
         jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 130, 80));
@@ -249,13 +277,18 @@ public class FMain extends javax.swing.JFrame {
 
     private void btSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSubmitActionPerformed
         // TODO add your handling code here:
+        String namaKategori = cbType.getSelectedItem().toString(); // Ambil nama kategori dari ComboBox
+        int idKategori = getIdKategoriByNama(namaKategori); // Ambil ID kategori dari nama
+
+        Instant timestamp = Instant.now();
         try {
             String sql = "INSERT INTO barang VALUES "
                     + "('" + txtIdBarang.getText()
                     + "','" + txtNamaBarang.getText()
-                    + "','" + cbType.getSelectedItem()
+                    + "','" + idKategori
                     + "','" + txtStok.getText()
-                    + "','" + txtHarga.getText() + "')";
+                    + "','" + txtHarga.getText()
+                    + "','" + timestamp + "')";
             java.sql.Connection conn = (Connection) Config.configDB();
             java.sql.PreparedStatement pst = conn.prepareStatement(sql);
             pst.execute();
