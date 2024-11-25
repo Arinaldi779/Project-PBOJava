@@ -78,8 +78,6 @@ public class FType extends javax.swing.JFrame {
             pst.execute();
             JOptionPane.showMessageDialog(null, "Penyimpanan Data Berhasil");
             writeLog("Penyimpanan Data Berhasil dengan Kategori " + txtKategori.getText());
-            FMain formMain = new FMain();
-            formMain.setVisible(true);
             dispose();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, e.getMessage());
