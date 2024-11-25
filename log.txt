@@ -27,3 +27,193 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-23 17:41:37-Koneksi Gagal:No suitable driver found for jdbc:mysql://localhost:3306/gudang_computer
 2024-11-23 19:45:31-Koneksi Gagal:No suitable driver found for jdbc:mysql://localhost:3306/gudang_computer
 >>>>>>> 8bf5ad5c576c19116c297014d07ea3c6ebe7dc5b
+2024-11-24 22:10:51-Koneksi berhasil ke database
+2024-11-24 22:10:51-Tampilkan data ke Frame FMain
+2024-11-24 22:26:24-Koneksi berhasil ke database
+2024-11-24 22:26:25-Tampilkan data ke Frame FMain
+2024-11-24 22:34:32-Koneksi berhasil ke database
+2024-11-24 22:34:32-Tampilkan data ke Frame FMain
+2024-11-24 22:34:32-Koneksi berhasil ke database
+2024-11-24 22:34:32-Error saat memuat ComboBox: Column 'nama_kolom' not found.
+2024-11-24 22:35:36-Koneksi berhasil ke database
+2024-11-24 22:35:36-Tampilkan data ke Frame FMain
+2024-11-24 22:35:36-Koneksi berhasil ke database
+2024-11-24 22:35:36-ComboBox berhasil dimuat dengan data.
+2024-11-24 22:37:22-Koneksi berhasil ke database
+2024-11-24 22:37:22-Tampilkan data ke Frame FMain
+2024-11-24 22:37:22-Koneksi berhasil ke database
+2024-11-24 22:37:22-ComboBox berhasil dimuat dengan data.
+2024-11-24 23:05:21-Koneksi berhasil ke database
+2024-11-24 23:05:21-Tampilkan data ke Frame FMain
+2024-11-24 23:05:21-Koneksi berhasil ke database
+2024-11-24 23:05:21-ComboBox berhasil dimuat dengan data.
+2024-11-24 23:05:45-Koneksi berhasil ke database
+2024-11-24 23:05:53-Data gagal disimpan : Column count doesn't match value count at row 1
+2024-11-24 23:05:59-Koneksi berhasil ke database
+2024-11-24 23:09:48-Data gagal disimpan : Column count doesn't match value count at row 1
+2024-11-25 00:41:04-Koneksi berhasil ke database
+2024-11-25 00:41:04-Tampilkan data ke Frame FMain
+2024-11-25 00:41:04-Koneksi berhasil ke database
+2024-11-25 00:41:04-ComboBox berhasil dimuat dengan data.
+2024-11-25 00:47:09-Koneksi berhasil ke database
+2024-11-25 00:47:09-Tampilkan data ke Frame FMain
+2024-11-25 00:47:09-Koneksi berhasil ke database
+2024-11-25 00:47:09-ComboBox berhasil dimuat dengan data.
+2024-11-25 00:47:36-Koneksi berhasil ke database
+2024-11-25 00:47:38-Data gagal disimpan : Column count doesn't match value count at row 1
+2024-11-25 00:49:43-Koneksi berhasil ke database
+2024-11-25 00:49:44-Koneksi berhasil ke database
+2024-11-25 00:49:44-Tampilkan data ke Frame FMain
+2024-11-25 00:49:44-Koneksi berhasil ke database
+2024-11-25 00:49:44-ComboBox berhasil dimuat dengan data.
+2024-11-25 10:49:27-Koneksi berhasil ke database
+2024-11-25 10:49:27-Tampilkan data ke Frame FMain
+2024-11-25 10:49:27-Koneksi berhasil ke database
+2024-11-25 10:49:27-ComboBox berhasil dimuat dengan data.
+2024-11-25 10:51:15-Koneksi berhasil ke database
+2024-11-25 10:51:15-Tampilkan data ke Frame FMain
+2024-11-25 10:51:15-Koneksi berhasil ke database
+2024-11-25 10:51:15-ComboBox berhasil dimuat dengan data.
+2024-11-25 10:51:32-Koneksi berhasil ke database
+2024-11-25 10:51:42-Data gagal disimpan : Column count doesn't match value count at row 1
+2024-11-25 10:56:46-Koneksi berhasil ke database
+2024-11-25 10:56:47-Koneksi berhasil ke database
+2024-11-25 10:56:47-Tampilkan data ke Frame FMain
+2024-11-25 10:56:47-Koneksi berhasil ke database
+2024-11-25 10:56:47-ComboBox berhasil dimuat dengan data.
+2024-11-25 10:57:05-Koneksi berhasil ke database
+2024-11-25 10:59:39-Data gagal disimpan : Column count doesn't match value count at row 1
+2024-11-25 10:59:41-Koneksi berhasil ke database
+2024-11-25 10:59:43-Data gagal disimpan : Column count doesn't match value count at row 1
+2024-11-25 10:59:58-Koneksi berhasil ke database
+2024-11-25 10:59:58-Tampilkan data ke Frame FMain
+2024-11-25 10:59:58-Koneksi berhasil ke database
+2024-11-25 10:59:58-ComboBox berhasil dimuat dengan data.
+2024-11-25 11:00:23-Koneksi berhasil ke database
+2024-11-25 11:00:23-Tampilkan data ke Frame FMain
+2024-11-25 11:00:23-Koneksi berhasil ke database
+2024-11-25 11:00:23-ComboBox berhasil dimuat dengan data.
+2024-11-25 11:00:43-Koneksi berhasil ke database
+2024-11-25 11:18:08-Koneksi berhasil ke database
+2024-11-25 11:18:08-Tampilkan data ke Frame FMain
+2024-11-25 11:18:08-Koneksi berhasil ke database
+2024-11-25 11:18:08-ComboBox berhasil dimuat dengan data.
+2024-11-25 11:18:23-Koneksi berhasil ke database
+2024-11-25 11:18:24-Penyimpanan Data Berhasil dengan NIM hehe123
+2024-11-25 11:18:24-Koneksi berhasil ke database
+2024-11-25 11:18:24-Tampilkan data ke Frame FMain
+2024-11-25 11:19:06-Data gagal disimpan : Data truncation: Incorrect integer value: 'Computer' for column `gudang_computer`.`barang`.`id_kategori` at row 1
+2024-11-25 11:31:06-Koneksi berhasil ke database
+2024-11-25 11:31:06-Tampilkan data ke Frame FMain
+2024-11-25 11:31:06-Koneksi berhasil ke database
+2024-11-25 11:31:06-ComboBox berhasil dimuat dengan data.
+2024-11-25 11:34:24-Koneksi berhasil ke database
+2024-11-25 11:34:24-Tampilkan data ke Frame FMain
+2024-11-25 11:34:24-Koneksi berhasil ke database
+2024-11-25 11:34:24-ComboBox berhasil dimuat dengan data.
+2024-11-25 13:24:23-Koneksi Gagal:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-25 13:24:47-Koneksi berhasil ke database
+2024-11-25 13:24:49-Koneksi berhasil ke database
+2024-11-25 13:24:49-Tampilkan data ke Frame FMain
+2024-11-25 13:24:49-Koneksi berhasil ke database
+2024-11-25 13:24:49-ComboBox berhasil dimuat dengan data.
+2024-11-25 13:25:12-Koneksi berhasil ke database
+2024-11-25 13:25:14-Koneksi berhasil ke database
+2024-11-25 13:25:14-Tampilkan data ke Frame FMain
+2024-11-25 13:25:14-Koneksi berhasil ke database
+2024-11-25 13:25:14-ComboBox berhasil dimuat dengan data.
+2024-11-25 13:25:45-Koneksi berhasil ke database
+2024-11-25 13:25:48-Data gagal disimpan : Data truncation: Out of range value for column 'harga' at row 1
+2024-11-25 13:25:52-Koneksi berhasil ke database
+2024-11-25 13:25:53-Penyimpanan Data Berhasil dengan NIM hehehe123
+2024-11-25 13:25:53-Koneksi berhasil ke database
+2024-11-25 13:25:53-Tampilkan data ke Frame FMain
+2024-11-25 13:30:14-Koneksi berhasil ke database
+2024-11-25 13:30:17-Koneksi berhasil ke database
+2024-11-25 13:30:17-Tampilkan data ke Frame FMain
+2024-11-25 13:30:17-Koneksi berhasil ke database
+2024-11-25 13:30:17-ComboBox berhasil dimuat dengan data.
+2024-11-25 13:31:10-Koneksi berhasil ke database
+2024-11-25 13:31:11-Penyimpanan Data Berhasil dengan NIM hajshasash
+2024-11-25 13:31:11-Koneksi berhasil ke database
+2024-11-25 13:31:11-Tampilkan data ke Frame FMain
+2024-11-25 13:33:09-Koneksi berhasil ke database
+2024-11-25 13:33:11-Koneksi berhasil ke database
+2024-11-25 13:33:11-Tampilkan data ke Frame FMain
+2024-11-25 13:33:11-Koneksi berhasil ke database
+2024-11-25 13:33:11-ComboBox berhasil dimuat dengan data.
+2024-11-25 13:52:58-Koneksi berhasil ke database
+2024-11-25 13:53:00-Koneksi berhasil ke database
+2024-11-25 13:53:00-Tampilkan data ke Frame FMain
+2024-11-25 13:53:00-Koneksi berhasil ke database
+2024-11-25 13:53:00-ComboBox berhasil dimuat dengan data.
+2024-11-25 13:53:14-Koneksi berhasil ke database
+2024-11-25 13:53:16-Penyimpanan Data Berhasil dengan NIM asbsajsja
+2024-11-25 13:53:16-Koneksi berhasil ke database
+2024-11-25 13:53:16-Tampilkan data ke Frame FMain
+2024-11-25 13:56:50-Koneksi berhasil ke database
+2024-11-25 15:37:53-Koneksi berhasil ke database
+2024-11-25 15:37:56-Koneksi berhasil ke database
+2024-11-25 15:37:56-Tampilkan data ke Frame FMain
+2024-11-25 15:37:56-Koneksi berhasil ke database
+2024-11-25 15:37:56-ComboBox berhasil dimuat dengan data.
+2024-11-25 15:38:19-Koneksi berhasil ke database
+2024-11-25 15:38:20-Penyimpanan Data Berhasil dengan NIM jhssdskdk
+2024-11-25 15:38:20-Koneksi berhasil ke database
+2024-11-25 15:38:20-Tampilkan data ke Frame FMain
+2024-11-25 16:31:04-Koneksi berhasil ke database
+2024-11-25 16:31:04-Tampilkan data ke Frame FMain
+2024-11-25 16:31:04-Koneksi berhasil ke database
+2024-11-25 16:31:04-ComboBox berhasil dimuat dengan data.
+2024-11-25 16:38:44-Koneksi berhasil ke database
+2024-11-25 16:38:59-Data gagal disimpan : Data truncation: Incorrect integer value: '' for column `gudang_computer`.`type`.`id_type` at row 1
+2024-11-25 16:41:05-Koneksi berhasil ke database
+2024-11-25 16:41:06-Penyimpanan Data Berhasil dengan Kategori Accesoris
+2024-11-25 16:41:06-Koneksi berhasil ke database
+2024-11-25 16:41:06-Tampilkan data ke Frame FMain
+2024-11-25 16:41:06-Koneksi berhasil ke database
+2024-11-25 16:41:06-ComboBox berhasil dimuat dengan data.
+2024-11-25 17:02:22-Koneksi berhasil ke database
+2024-11-25 17:02:22-Tampilkan data ke Frame FMain
+2024-11-25 17:02:22-Koneksi berhasil ke database
+2024-11-25 17:02:22-ComboBox berhasil dimuat dengan data.
+2024-11-25 17:07:48-Koneksi berhasil ke database
+2024-11-25 17:07:48-Tampilkan data ke Frame FMain
+2024-11-25 17:07:48-Koneksi berhasil ke database
+2024-11-25 17:07:48-Tampilkan data ke Frame FMain
+2024-11-25 17:10:16-Koneksi berhasil ke database
+2024-11-25 17:10:16-Tampilkan data ke Frame FMain
+2024-11-25 17:10:16-Koneksi berhasil ke database
+2024-11-25 17:10:16-ComboBox berhasil dimuat dengan data.
+2024-11-25 17:10:32-Koneksi berhasil ke database
+2024-11-25 17:10:33-Penyimpanan Data Berhasil dengan Kategori Laptop
+2024-11-25 17:10:33-Koneksi berhasil ke database
+2024-11-25 17:10:33-Tampilkan data ke Frame FMain
+2024-11-25 17:10:33-Koneksi berhasil ke database
+2024-11-25 17:10:33-ComboBox berhasil dimuat dengan data.
+2024-11-25 17:11:29-Koneksi berhasil ke database
+2024-11-25 17:11:29-Tampilkan data ke Frame FMain
+2024-11-25 17:11:29-Koneksi berhasil ke database
+2024-11-25 17:11:29-ComboBox berhasil dimuat dengan data.
+2024-11-25 17:11:35-Koneksi berhasil ke database
+2024-11-25 17:11:36-Penyimpanan Data Berhasil dengan Kategori Makanan
+2024-11-25 17:11:36-Koneksi berhasil ke database
+2024-11-25 17:11:36-Tampilkan data ke Frame FMain
+2024-11-25 17:11:36-Koneksi berhasil ke database
+2024-11-25 17:11:36-ComboBox berhasil dimuat dengan data.
+2024-11-25 17:55:34-Koneksi berhasil ke database
+2024-11-25 17:55:34-Tampilkan data ke Frame FMain
+2024-11-25 17:55:34-Koneksi berhasil ke database
+2024-11-25 17:55:34-ComboBox berhasil dimuat dengan data.
+2024-11-25 17:55:53-Koneksi berhasil ke database
+2024-11-25 17:55:59-Data gagal disimpan : Duplicate entry 'haha1234' for key 'PRIMARY'
+2024-11-25 17:56:02-Koneksi berhasil ke database
+2024-11-25 17:56:04-Data Berhasil Diperbaharui dengan Id Barang haha1234
+2024-11-25 17:56:04-Koneksi berhasil ke database
+2024-11-25 17:56:04-Tampilkan data ke Frame FMain
+2024-11-25 17:56:51-Koneksi berhasil ke database
+2024-11-25 17:56:52-Data Berhasil Diperbaharui dengan Id Barang haha1234
+2024-11-25 17:56:52-Koneksi berhasil ke database
+2024-11-25 17:56:52-Tampilkan data ke Frame FMain

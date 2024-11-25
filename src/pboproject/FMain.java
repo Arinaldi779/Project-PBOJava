@@ -4,6 +4,7 @@
  */
 package pboproject;
 
+import com.mysql.cj.xdevapi.Result;
 import com.mysql.cj.xdevapi.Statement;
 import java.sql.Connection;
 import java.util.ArrayList;
@@ -59,18 +60,31 @@ public class FMain extends javax.swing.JFrame {
         setLocationRelativeTo(null); // Agar jendela muncul di tengah layar
         load_table(); // masukan code berikut
         loadComboBox();
-        showData(null);
+
+//        showData(null);
     }
 
-    private void showData(String cari) {
-        String sql;
-        if (cari == null) {
-            sql = "select * from";
-        } else {
-
-        }
-    }
-
+//    private void showData(String cari) {
+//        String sql;
+//        if (cari == null) {
+//            sql = "select * from v_barangtype";
+//        } else {
+//            sql = "select * from v_barangtype where "
+//                    + "idBarang like '%" + cari +"%'"
+//                    + "namaBarang like '%" + cari + "%'"
+//                    + "Kategori like '%" + cari + "%'";
+//        }
+//        
+//        try {
+////            java.sql.Connection conn = (Connection) Config.configDB();
+////            java.sql.Statement stm = conn.createStatement();
+////            java.sql.ResultSet res = stm.executeQuery(sql);
+//            
+//            ResultSet res = DB.read(sql);
+//            
+//        } catch (Exception e) {
+//        }
+//    }
     private void bersihkan() {
         txtIdBarang.setText(null);
         txtNamaBarang.setText(null);
@@ -139,6 +153,7 @@ public class FMain extends javax.swing.JFrame {
         btHapus = new javax.swing.JButton();
         btEdit = new javax.swing.JButton();
         btClear = new javax.swing.JButton();
+        btTambahKategori = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -184,6 +199,11 @@ public class FMain extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tblBarang.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblBarangMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tblBarang);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 560, 160));
@@ -230,6 +250,11 @@ public class FMain extends javax.swing.JFrame {
         btEdit.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
         btEdit.setForeground(new java.awt.Color(0, 0, 0));
         btEdit.setText("Edit");
+        btEdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEditActionPerformed(evt);
+            }
+        });
         jPanel1.add(btEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, -1, -1));
 
         btClear.setBackground(new java.awt.Color(255, 255, 204));
@@ -242,6 +267,15 @@ public class FMain extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, -1, -1));
+
+        btTambahKategori.setBackground(new java.awt.Color(255, 255, 204));
+        btTambahKategori.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/1564491_add_create_new_plus_icon (1) (1) (1).png"))); // NOI18N
+        btTambahKategori.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btTambahKategoriActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btTambahKategori, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, 40, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Form Barang1.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1920, 1080));
@@ -302,6 +336,63 @@ public class FMain extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btSubmitActionPerformed
 
+    private void btTambahKategoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTambahKategoriActionPerformed
+        // TODO add your handling code here:
+        FType formType = new FType();
+        formType.setVisible(true);
+    }//GEN-LAST:event_btTambahKategoriActionPerformed
+
+    private void btEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEditActionPerformed
+        // TODO add your handling code here:
+        String namaKategori = cbType.getSelectedItem().toString(); // Ambil nama kategori dari ComboBox
+        int idKategori = getIdKategoriByNama(namaKategori); // Ambil ID kategori dari nama
+
+        Instant timestamp = Instant.now();
+        try {
+            if ("".equals(txtIdBarang.getText())) {
+                JOptionPane.showMessageDialog(this, "Isikan Id Barang terlebih dahulu");
+            } else {
+                String sql = "UPDATE barang SET "
+                        + "id_barang = '" + txtIdBarang.getText() + "', "
+                        + "nama_barang = '" + txtNamaBarang.getText() + "', "
+                        + "id_type = '" + idKategori + "', "
+                        + "stok = '" + txtStok.getText() + "', "
+                        + "harga = '" + txtHarga.getText() + "', "
+                        + "tgl_masuk = '" + timestamp + "' "
+                        + "WHERE id_barang = '" + txtIdBarang.getText() + "'";
+                java.sql.Connection conn = (Connection) Config.configDB();
+                java.sql.PreparedStatement pst = conn.prepareStatement(sql);
+                pst.execute();
+                JOptionPane.showMessageDialog(null, "Data Berhasil Diperbaharui");
+                writeLog("Data Berhasil Diperbaharui dengan Id Barang " + txtIdBarang.getText());
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+            writeLog("Data gagal disimpan : " + e.getMessage());
+        }
+        load_table();
+        bersihkan();
+
+    }//GEN-LAST:event_btEditActionPerformed
+
+    private void tblBarangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblBarangMouseClicked
+        // TODO add your handling code here:
+
+        int baris = tblBarang.rowAtPoint(evt.getPoint());
+        String idBarang = tblBarang.getValueAt(baris, 1).toString();
+        String namaBarang = tblBarang.getValueAt(baris, 2).toString();
+        String kategori = tblBarang.getValueAt(baris, 3).toString();
+        String stok = tblBarang.getValueAt(baris, 4).toString();
+        String harga = tblBarang.getValueAt(baris, 5).toString();
+        String tglMasuk = tblBarang.getValueAt(baris, 6).toString();
+        txtIdBarang.setText(idBarang);
+        txtNamaBarang.setText(namaBarang);
+        cbType.setSelectedItem(kategori);
+        txtStok.setText(stok);
+        txtHarga.setText(harga);
+        txtNamaBarang.requestFocus();
+    }//GEN-LAST:event_tblBarangMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -343,6 +434,7 @@ public class FMain extends javax.swing.JFrame {
     private javax.swing.JButton btHapus;
     private javax.swing.JButton btLogout;
     private javax.swing.JButton btSubmit;
+    private javax.swing.JButton btTambahKategori;
     private javax.swing.JComboBox<String> cbType;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
