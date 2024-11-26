@@ -6,7 +6,7 @@ package pboproject;
 
 /**
  *
- * @author Makhluk Hidup
+ * @author Kelompok 5
  */
 public class FSplash extends javax.swing.JFrame {
 

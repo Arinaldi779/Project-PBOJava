@@ -217,3 +217,710 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-25 17:56:52-Data Berhasil Diperbaharui dengan Id Barang haha1234
 2024-11-25 17:56:52-Koneksi berhasil ke database
 2024-11-25 17:56:52-Tampilkan data ke Frame FMain
+2024-11-25 18:03:53-Koneksi berhasil ke database
+2024-11-25 18:03:53-Tampilkan data ke Frame FMain
+2024-11-25 18:03:53-Koneksi berhasil ke database
+2024-11-25 18:03:53-ComboBox berhasil dimuat dengan data.
+2024-11-25 18:04:26-Koneksi berhasil ke database
+2024-11-25 18:04:31-Penyimpanan Data Berhasil dengan Kategori Minuman
+2024-11-25 18:04:31-Koneksi berhasil ke database
+2024-11-25 18:04:31-Tampilkan data ke Frame FMain
+2024-11-25 18:04:31-Koneksi berhasil ke database
+2024-11-25 18:04:31-ComboBox berhasil dimuat dengan data.
+2024-11-25 18:05:35-Koneksi berhasil ke database
+2024-11-25 18:05:35-Tampilkan data ke Frame FMain
+2024-11-25 18:05:35-Koneksi berhasil ke database
+2024-11-25 18:05:35-ComboBox berhasil dimuat dengan data.
+2024-11-25 18:05:47-Koneksi berhasil ke database
+2024-11-25 18:05:48-Penyimpanan Data Berhasil dengan Kategori Tambahan
+2024-11-25 22:05:09-Koneksi berhasil ke database
+2024-11-25 22:05:09-Tampilkan data ke Frame FMain
+2024-11-25 22:05:09-Koneksi berhasil ke database
+2024-11-25 22:05:09-ComboBox berhasil dimuat dengan data.
+2024-11-25 22:05:17-Koneksi berhasil ke database
+2024-11-25 22:05:22-Data Berhasil Dihapus dengan Id Barang haha1234
+2024-11-25 22:05:22-Koneksi berhasil ke database
+2024-11-25 22:05:22-Tampilkan data ke Frame FMain
+2024-11-25 22:05:28-Koneksi berhasil ke database
+2024-11-25 22:05:30-Data Berhasil Dihapus dengan Id Barang jhssdskdk
+2024-11-25 22:05:30-Koneksi berhasil ke database
+2024-11-25 22:05:30-Tampilkan data ke Frame FMain
+2024-11-25 22:05:34-Koneksi berhasil ke database
+2024-11-25 22:05:35-Data Berhasil Dihapus dengan Id Barang hehehe123
+2024-11-25 22:05:35-Koneksi berhasil ke database
+2024-11-25 22:05:35-Tampilkan data ke Frame FMain
+2024-11-25 22:07:43-Koneksi berhasil ke database
+2024-11-25 22:07:44-Tampilkan data ke Frame FMain
+2024-11-25 22:07:44-Koneksi berhasil ke database
+2024-11-25 22:07:44-ComboBox berhasil dimuat dengan data.
+2024-11-25 22:07:48-Koneksi berhasil ke database
+2024-11-25 22:07:48-Tampilkan data ke Frame FMain
+2024-11-25 22:07:50-Koneksi berhasil ke database
+2024-11-25 22:07:51-Data Berhasil Dihapus dengan Id Barang hehe123
+2024-11-25 22:07:51-Koneksi berhasil ke database
+2024-11-25 22:07:51-Tampilkan data ke Frame FMain
+2024-11-25 22:08:38-Koneksi berhasil ke database
+2024-11-25 22:08:38-Tampilkan data ke Frame FMain
+2024-11-25 22:08:38-Koneksi berhasil ke database
+2024-11-25 22:08:38-ComboBox berhasil dimuat dengan data.
+2024-11-25 22:09:12-Koneksi berhasil ke database
+2024-11-25 22:09:12-Tampilkan data ke Frame FMain
+2024-11-25 22:09:12-Koneksi berhasil ke database
+2024-11-25 22:09:12-ComboBox berhasil dimuat dengan data.
+2024-11-25 22:09:58-Koneksi berhasil ke database
+2024-11-25 22:09:58-Tampilkan data ke Frame FMain
+2024-11-25 22:09:58-Koneksi berhasil ke database
+2024-11-25 22:09:58-ComboBox berhasil dimuat dengan data.
+2024-11-25 22:11:22-Koneksi berhasil ke database
+2024-11-25 22:11:22-Tampilkan data ke Frame FMain
+2024-11-25 22:11:22-Koneksi berhasil ke database
+2024-11-25 22:11:22-ComboBox berhasil dimuat dengan data.
+2024-11-25 22:11:31-Koneksi berhasil ke database
+2024-11-25 22:11:33-Data gagal disimpan : Data truncation: Incorrect integer value: '' for column `gudang_computer`.`barang`.`stok` at row 1
+2024-11-25 22:11:39-Koneksi berhasil ke database
+2024-11-25 22:11:39-Tampilkan data ke Frame FMain
+2024-11-25 22:11:40-Koneksi berhasil ke database
+2024-11-25 22:11:40-Tampilkan data ke Frame FMain
+2024-11-25 22:12:03-Koneksi berhasil ke database
+2024-11-25 22:12:04-Data Berhasil Dihapus dengan Id Barang haha123
+2024-11-25 22:12:04-Koneksi berhasil ke database
+2024-11-25 22:12:04-Tampilkan data ke Frame FMain
+2024-11-25 22:25:28-Koneksi berhasil ke database
+2024-11-25 22:25:28-Tampilkan data ke Frame FMain
+2024-11-25 22:25:28-Koneksi berhasil ke database
+2024-11-25 22:25:28-ComboBox berhasil dimuat dengan data.
+2024-11-26 00:26:48-Koneksi berhasil ke database
+2024-11-26 00:26:48-Tampilkan data ke Frame FMain
+2024-11-26 00:26:48-Koneksi berhasil ke database
+2024-11-26 00:26:48-ComboBox berhasil dimuat dengan data.
+2024-11-26 00:26:57-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 00:27:55-Koneksi berhasil ke database
+2024-11-26 00:27:55-Tampilkan data ke Frame FMain
+2024-11-26 00:27:55-Koneksi berhasil ke database
+2024-11-26 00:27:55-ComboBox berhasil dimuat dengan data.
+2024-11-26 00:28:09-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 00:28:51-Koneksi berhasil ke database
+2024-11-26 00:28:51-Tampilkan data ke Frame FMain
+2024-11-26 00:28:51-Koneksi berhasil ke database
+2024-11-26 00:28:51-ComboBox berhasil dimuat dengan data.
+2024-11-26 00:31:56-Koneksi berhasil ke database
+2024-11-26 00:31:56-Tampilkan data ke Frame FMain
+2024-11-26 00:31:56-Koneksi berhasil ke database
+2024-11-26 00:31:56-ComboBox berhasil dimuat dengan data.
+2024-11-26 00:32:04-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 00:33:42-Koneksi berhasil ke database
+2024-11-26 00:33:43-Koneksi berhasil ke database
+2024-11-26 00:33:43-Tampilkan data ke Frame FMain
+2024-11-26 00:33:43-Koneksi berhasil ke database
+2024-11-26 00:33:43-ComboBox berhasil dimuat dengan data.
+2024-11-26 00:33:49-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 00:42:42-Koneksi berhasil ke database
+2024-11-26 00:42:42-Tampilkan data ke Frame FMain
+2024-11-26 00:42:42-Koneksi berhasil ke database
+2024-11-26 00:42:42-ComboBox berhasil dimuat dengan data.
+2024-11-26 00:42:48-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 00:44:23-Koneksi berhasil ke database
+2024-11-26 00:44:23-Tampilkan data ke Frame FMain
+2024-11-26 00:44:23-Koneksi berhasil ke database
+2024-11-26 00:44:23-ComboBox berhasil dimuat dengan data.
+2024-11-26 00:44:30-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 01:20:55-Koneksi berhasil ke database
+2024-11-26 01:20:55-Tampilkan data ke Frame FMain
+2024-11-26 01:20:55-Koneksi berhasil ke database
+2024-11-26 01:20:55-ComboBox berhasil dimuat dengan data.
+2024-11-26 01:21:01-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 01:21:15-Koneksi berhasil ke database
+2024-11-26 01:22:07-Koneksi berhasil ke database
+2024-11-26 01:23:41-Koneksi berhasil ke database
+2024-11-26 01:23:41-Tampilkan data ke Frame FMain
+2024-11-26 01:23:41-Koneksi berhasil ke database
+2024-11-26 01:23:41-ComboBox berhasil dimuat dengan data.
+2024-11-26 01:23:49-Data Berhasil Dikirim dengan Id Barang hajshasash
+2024-11-26 01:24:05-Koneksi berhasil ke database
+2024-11-26 01:27:03-Data gagal Dikirim : Data truncation: Incorrect integer value: 'hajshasash' for column `gudang_computer`.`transaksi`.`id_barang` at row 1
+2024-11-26 01:27:04-Koneksi berhasil ke database
+2024-11-26 01:27:05-Penyimpanan Data Berhasil dengan NIM Transit1
+2024-11-26 01:27:05-Koneksi berhasil ke database
+2024-11-26 01:27:05-Data tidak dapat ditampilkan : Column Index out of range, 7 > 6. 
+2024-11-26 01:29:18-Koneksi berhasil ke database
+2024-11-26 01:29:19-Data tidak dapat ditampilkan : Column Index out of range, 7 > 6. 
+2024-11-26 01:29:19-Koneksi berhasil ke database
+2024-11-26 01:29:19-Tampilkan data ke Frame FMain
+2024-11-26 01:29:19-Koneksi berhasil ke database
+2024-11-26 01:29:19-ComboBox berhasil dimuat dengan data.
+2024-11-26 01:29:24-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 01:34:45-Koneksi berhasil ke database
+2024-11-26 01:34:45-Tampilkan data ke Frame FTransit
+2024-11-26 01:47:56-Koneksi berhasil ke database
+2024-11-26 01:47:56-Tampilkan data ke Frame FTransit
+2024-11-26 01:48:04-Koneksi berhasil ke database
+2024-11-26 01:48:04-Tampilkan data ke Frame FTransit
+2024-11-26 01:48:06-Koneksi berhasil ke database
+2024-11-26 01:48:06-Tampilkan data ke Frame FTransit
+2024-11-26 01:49:30-Koneksi berhasil ke database
+2024-11-26 01:49:30-Tampilkan data ke Frame FTransit
+2024-11-26 01:50:26-Koneksi berhasil ke database
+2024-11-26 01:50:26-Tampilkan data ke Frame FTransit
+2024-11-26 01:50:34-Koneksi berhasil ke database
+2024-11-26 01:50:43-Data gagal dihapus : Table 'gudang_computer.transit' doesn't exist
+2024-11-26 01:50:43-Koneksi berhasil ke database
+2024-11-26 01:50:43-Tampilkan data ke Frame FTransit
+2024-11-26 01:51:20-Koneksi berhasil ke database
+2024-11-26 01:52:06-Data gagal dihapus : Table 'gudang_computer.transit' doesn't exist
+2024-11-26 01:52:06-Koneksi berhasil ke database
+2024-11-26 01:52:06-Tampilkan data ke Frame FTransit
+2024-11-26 01:52:08-Koneksi berhasil ke database
+2024-11-26 01:52:10-Data gagal dihapus : Table 'gudang_computer.transit' doesn't exist
+2024-11-26 01:52:10-Koneksi berhasil ke database
+2024-11-26 01:52:10-Tampilkan data ke Frame FTransit
+2024-11-26 01:52:29-Koneksi berhasil ke database
+2024-11-26 01:52:29-Tampilkan data ke Frame FTransit
+2024-11-26 01:52:32-Koneksi berhasil ke database
+2024-11-26 01:52:52-Data gagal dihapus : Unknown column 'id_transit' in 'where clause'
+2024-11-26 01:52:52-Koneksi berhasil ke database
+2024-11-26 01:52:52-Tampilkan data ke Frame FTransit
+2024-11-26 01:53:26-Koneksi berhasil ke database
+2024-11-26 01:53:26-Tampilkan data ke Frame FTransit
+2024-11-26 01:53:30-Koneksi berhasil ke database
+2024-11-26 01:53:34-Data Berhasil Dihapus dengan Id Transit Transit1
+2024-11-26 01:53:34-Koneksi berhasil ke database
+2024-11-26 01:53:34-Tampilkan data ke Frame FTransit
+2024-11-26 01:57:36-Koneksi berhasil ke database
+2024-11-26 01:57:36-Tampilkan data ke Frame FTransit
+2024-11-26 01:57:37-Koneksi berhasil ke database
+2024-11-26 01:57:37-Tampilkan data ke Frame FMain
+2024-11-26 01:57:37-Koneksi berhasil ke database
+2024-11-26 01:57:37-ComboBox berhasil dimuat dengan data.
+2024-11-26 01:57:47-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 01:58:03-Koneksi berhasil ke database
+2024-11-26 01:58:04-Penyimpanan Data Berhasil dengan NIM Transit 2
+2024-11-26 01:58:04-Koneksi berhasil ke database
+2024-11-26 01:58:04-Tampilkan data ke Frame FTransit
+2024-11-26 01:58:16-Koneksi berhasil ke database
+2024-11-26 01:59:32-Data gagal disimpan : Unknown column 'id_transaksi' in 'where clause'
+2024-11-26 01:59:32-Koneksi berhasil ke database
+2024-11-26 01:59:32-Tampilkan data ke Frame FTransit
+2024-11-26 01:59:47-Koneksi berhasil ke database
+2024-11-26 01:59:47-Tampilkan data ke Frame FTransit
+2024-11-26 01:59:48-Koneksi berhasil ke database
+2024-11-26 01:59:48-Tampilkan data ke Frame FMain
+2024-11-26 01:59:48-Koneksi berhasil ke database
+2024-11-26 01:59:48-ComboBox berhasil dimuat dengan data.
+2024-11-26 01:59:56-Data Berhasil Dikirim dengan Id Barang hajshasash
+2024-11-26 02:00:14-Koneksi berhasil ke database
+2024-11-26 02:00:16-Data gagal Dikirim : Duplicate entry 'Transit 2' for key 'PRIMARY'
+2024-11-26 02:00:40-Koneksi berhasil ke database
+2024-11-26 02:00:40-Tampilkan data ke Frame FTransit
+2024-11-26 02:00:40-Koneksi berhasil ke database
+2024-11-26 02:00:40-Tampilkan data ke Frame FMain
+2024-11-26 02:00:40-Koneksi berhasil ke database
+2024-11-26 02:00:40-ComboBox berhasil dimuat dengan data.
+2024-11-26 02:00:47-Data Berhasil Dikirim dengan Id Barang hajshasash
+2024-11-26 02:03:08-Koneksi berhasil ke database
+2024-11-26 02:03:08-Tampilkan data ke Frame FTransit
+2024-11-26 02:03:08-Koneksi berhasil ke database
+2024-11-26 02:03:08-Tampilkan data ke Frame FMain
+2024-11-26 02:03:08-Koneksi berhasil ke database
+2024-11-26 02:03:08-ComboBox berhasil dimuat dengan data.
+2024-11-26 02:04:51-Koneksi berhasil ke database
+2024-11-26 02:04:52-Tampilkan data ke Frame FTransit
+2024-11-26 02:05:15-Koneksi berhasil ke database
+2024-11-26 02:05:15-Tampilkan data ke Frame FTransit
+2024-11-26 02:06:04-Koneksi berhasil ke database
+2024-11-26 02:06:04-Tampilkan data ke Frame FTransit
+2024-11-26 02:06:25-Koneksi berhasil ke database
+2024-11-26 02:07:55-Data gagal disimpan : Unknown column 'id_transaksi' in 'where clause'
+2024-11-26 02:07:55-Koneksi berhasil ke database
+2024-11-26 02:07:55-Tampilkan data ke Frame FTransit
+2024-11-26 02:08:11-Koneksi berhasil ke database
+2024-11-26 02:08:11-Tampilkan data ke Frame FTransit
+2024-11-26 02:08:22-Koneksi berhasil ke database
+2024-11-26 02:08:23-Data Berhasil Diperbaharui dengan Id Transit Transit 2
+2024-11-26 02:08:23-Koneksi berhasil ke database
+2024-11-26 02:08:23-Tampilkan data ke Frame FTransit
+2024-11-26 02:20:05-Koneksi berhasil ke database
+2024-11-26 02:20:05-Tampilkan data ke Frame FTransit
+2024-11-26 02:21:35-Koneksi berhasil ke database
+2024-11-26 02:21:35-Tampilkan data ke Frame FTransit
+2024-11-26 02:23:15-Koneksi berhasil ke database
+2024-11-26 02:23:15-Tampilkan data ke Frame FTransit
+2024-11-26 02:23:35-Koneksi berhasil ke database
+2024-11-26 02:23:37-Data Berhasil Diperbaharui dengan Id Transit Transit 2
+2024-11-26 02:23:37-Koneksi berhasil ke database
+2024-11-26 02:23:37-Tampilkan data ke Frame FTransit
+2024-11-26 02:23:48-Koneksi berhasil ke database
+2024-11-26 02:23:49-Data Berhasil Diperbaharui dengan Id Transit Transit 2
+2024-11-26 02:23:49-Koneksi berhasil ke database
+2024-11-26 02:23:49-Tampilkan data ke Frame FTransit
+2024-11-26 07:36:43-Koneksi Gagal:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-26 07:36:43-Data tidak dapat ditampilkan : Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
+2024-11-26 07:38:29-Koneksi Gagal:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2024-11-26 07:38:29-Data tidak dapat ditampilkan : Cannot invoke "java.sql.Connection.createStatement()" because "conn" is null
+2024-11-26 07:38:54-Koneksi berhasil ke database
+2024-11-26 07:38:54-Tampilkan data ke Frame FTransit
+2024-11-26 07:38:59-Koneksi berhasil ke database
+2024-11-26 07:39:01-Data Berhasil Dihapus dengan Id Transit Transit 2
+2024-11-26 07:39:01-Koneksi berhasil ke database
+2024-11-26 07:39:01-Tampilkan data ke Frame FTransit
+2024-11-26 07:41:59-Koneksi berhasil ke database
+2024-11-26 07:41:59-Tampilkan data ke Frame FTransit
+2024-11-26 07:41:59-Koneksi berhasil ke database
+2024-11-26 07:41:59-Tampilkan data ke Frame FMain
+2024-11-26 07:41:59-Koneksi berhasil ke database
+2024-11-26 07:41:59-ComboBox berhasil dimuat dengan data.
+2024-11-26 07:42:14-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 07:42:17-Koneksi berhasil ke database
+2024-11-26 07:42:17-Tampilkan data ke Frame FTransit
+2024-11-26 07:43:29-Koneksi berhasil ke database
+2024-11-26 07:43:29-Tampilkan data ke Frame FTransit
+2024-11-26 07:43:29-Koneksi berhasil ke database
+2024-11-26 07:43:29-Tampilkan data ke Frame FMain
+2024-11-26 07:43:29-Koneksi berhasil ke database
+2024-11-26 07:43:29-ComboBox berhasil dimuat dengan data.
+2024-11-26 07:48:20-Koneksi berhasil ke database
+2024-11-26 07:48:22-Koneksi berhasil ke database
+2024-11-26 07:48:22-Tampilkan data ke Frame FTransit
+2024-11-26 07:48:22-Koneksi berhasil ke database
+2024-11-26 07:48:22-Tampilkan data ke Frame FMain
+2024-11-26 07:48:22-Koneksi berhasil ke database
+2024-11-26 07:48:22-ComboBox berhasil dimuat dengan data.
+2024-11-26 07:49:11-Koneksi berhasil ke database
+2024-11-26 07:49:13-Penyimpanan Data Berhasil dengan NIM Barang3
+2024-11-26 07:49:13-Koneksi berhasil ke database
+2024-11-26 07:49:13-Tampilkan data ke Frame FMain
+2024-11-26 07:49:22-Koneksi berhasil ke database
+2024-11-26 07:49:22-Tampilkan data ke Frame FTransit
+2024-11-26 07:49:22-Koneksi berhasil ke database
+2024-11-26 07:49:22-Tampilkan data ke Frame FMain
+2024-11-26 07:49:22-Koneksi berhasil ke database
+2024-11-26 07:49:22-ComboBox berhasil dimuat dengan data.
+2024-11-26 07:49:23-Koneksi berhasil ke database
+2024-11-26 07:49:23-Tampilkan data ke Frame FTransit
+2024-11-26 07:49:23-Koneksi berhasil ke database
+2024-11-26 07:49:23-Tampilkan data ke Frame FMain
+2024-11-26 07:49:23-Koneksi berhasil ke database
+2024-11-26 07:49:23-ComboBox berhasil dimuat dengan data.
+2024-11-26 07:49:26-Koneksi berhasil ke database
+2024-11-26 07:49:26-Tampilkan data ke Frame FTransit
+2024-11-26 07:49:26-Koneksi berhasil ke database
+2024-11-26 07:49:26-Tampilkan data ke Frame FMain
+2024-11-26 07:49:26-Koneksi berhasil ke database
+2024-11-26 07:49:26-ComboBox berhasil dimuat dengan data.
+2024-11-26 07:49:28-Koneksi berhasil ke database
+2024-11-26 07:49:28-Tampilkan data ke Frame FTransit
+2024-11-26 07:49:28-Koneksi berhasil ke database
+2024-11-26 07:49:28-Tampilkan data ke Frame FMain
+2024-11-26 07:49:28-Koneksi berhasil ke database
+2024-11-26 07:49:28-ComboBox berhasil dimuat dengan data.
+2024-11-26 07:57:54-Koneksi berhasil ke database
+2024-11-26 07:57:54-Tampilkan data ke Frame FTransit
+2024-11-26 07:57:55-Koneksi berhasil ke database
+2024-11-26 07:57:55-Tampilkan data ke Frame FMain
+2024-11-26 07:57:55-Koneksi berhasil ke database
+2024-11-26 07:57:55-ComboBox berhasil dimuat dengan data.
+2024-11-26 07:58:05-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 07:58:23-Koneksi berhasil ke database
+2024-11-26 07:59:05-Data gagal Dikirim : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id_barang =asbsajsja' at line 1
+2024-11-26 08:01:05-Koneksi berhasil ke database
+2024-11-26 08:01:05-Tampilkan data ke Frame FTransit
+2024-11-26 08:01:05-Koneksi berhasil ke database
+2024-11-26 08:01:05-Tampilkan data ke Frame FMain
+2024-11-26 08:01:05-Koneksi berhasil ke database
+2024-11-26 08:01:05-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:01:11-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 08:01:23-Koneksi berhasil ke database
+2024-11-26 08:05:40-Data gagal Dikirim : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id_barang =asbsajsja' at line 1
+2024-11-26 08:05:41-Koneksi berhasil ke database
+2024-11-26 08:05:41-Tampilkan data ke Frame FTransit
+2024-11-26 08:05:41-Koneksi berhasil ke database
+2024-11-26 08:05:41-Tampilkan data ke Frame FMain
+2024-11-26 08:05:41-Koneksi berhasil ke database
+2024-11-26 08:05:42-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:05:46-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 08:06:08-Koneksi berhasil ke database
+2024-11-26 08:08:03-Data gagal Dikirim : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id_barang =asbsajsja' at line 1
+2024-11-26 08:08:07-Koneksi berhasil ke database
+2024-11-26 08:08:08-Data Berhasil Dihapus dengan Id Transit Transit123
+2024-11-26 08:08:08-Koneksi berhasil ke database
+2024-11-26 08:08:08-Tampilkan data ke Frame FTransit
+2024-11-26 08:08:10-Koneksi berhasil ke database
+2024-11-26 08:08:13-Data Berhasil Dihapus dengan Id Transit Transit1
+2024-11-26 08:08:13-Koneksi berhasil ke database
+2024-11-26 08:08:13-Tampilkan data ke Frame FTransit
+2024-11-26 08:08:26-Koneksi berhasil ke database
+2024-11-26 08:08:26-Tampilkan data ke Frame FTransit
+2024-11-26 08:08:26-Koneksi berhasil ke database
+2024-11-26 08:08:26-Tampilkan data ke Frame FMain
+2024-11-26 08:08:26-Koneksi berhasil ke database
+2024-11-26 08:08:26-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:08:58-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 08:09:10-Koneksi berhasil ke database
+2024-11-26 08:17:13-Data gagal Dikirim : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id_barang =asbsajsja' at line 1
+2024-11-26 08:18:32-Koneksi berhasil ke database
+2024-11-26 08:18:32-Tampilkan data ke Frame FTransit
+2024-11-26 08:18:32-Koneksi berhasil ke database
+2024-11-26 08:18:32-Tampilkan data ke Frame FMain
+2024-11-26 08:18:32-Koneksi berhasil ke database
+2024-11-26 08:18:32-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:18:37-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 08:19:58-Koneksi berhasil ke database
+2024-11-26 08:19:58-Tampilkan data ke Frame FTransit
+2024-11-26 08:19:58-Koneksi berhasil ke database
+2024-11-26 08:19:58-Tampilkan data ke Frame FMain
+2024-11-26 08:19:58-Koneksi berhasil ke database
+2024-11-26 08:19:58-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:20:05-Data Berhasil Dikirim dengan Id Barang Barang3
+2024-11-26 08:20:58-Koneksi berhasil ke database
+2024-11-26 08:20:58-Tampilkan data ke Frame FTransit
+2024-11-26 08:20:59-Koneksi berhasil ke database
+2024-11-26 08:20:59-Tampilkan data ke Frame FMain
+2024-11-26 08:20:59-Koneksi berhasil ke database
+2024-11-26 08:20:59-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:21:04-Data Berhasil Dikirim dengan Id Barang Barang3
+2024-11-26 08:21:15-Koneksi berhasil ke database
+2024-11-26 08:21:16-Penyimpanan Data Berhasil dengan NIM trans1234
+2024-11-26 08:21:16-Koneksi berhasil ke database
+2024-11-26 08:21:16-Tampilkan data ke Frame FTransit
+2024-11-26 08:24:58-Koneksi berhasil ke database
+2024-11-26 08:24:58-Tampilkan data ke Frame FTransit
+2024-11-26 08:24:58-Koneksi berhasil ke database
+2024-11-26 08:24:58-Tampilkan data ke Frame FMain
+2024-11-26 08:24:58-Koneksi berhasil ke database
+2024-11-26 08:24:58-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:25:08-Koneksi berhasil ke database
+2024-11-26 08:25:08-Tampilkan data ke Frame FTransit
+2024-11-26 08:25:08-Koneksi berhasil ke database
+2024-11-26 08:25:08-Tampilkan data ke Frame FMain
+2024-11-26 08:25:08-Koneksi berhasil ke database
+2024-11-26 08:25:08-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:33:51-Koneksi berhasil ke database
+2024-11-26 08:33:51-Tampilkan data ke Frame FTransit
+2024-11-26 08:33:52-Koneksi berhasil ke database
+2024-11-26 08:33:52-Tampilkan data ke Frame FMain
+2024-11-26 08:33:52-Koneksi berhasil ke database
+2024-11-26 08:33:52-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:33:59-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 08:34:10-Koneksi berhasil ke database
+2024-11-26 08:34:17-Koneksi berhasil ke database
+2024-11-26 08:34:19-Penyimpanan Data Berhasil dengan NIM Transit2
+2024-11-26 08:34:19-Koneksi berhasil ke database
+2024-11-26 08:34:19-Tampilkan data ke Frame FTransit
+2024-11-26 08:40:36-Koneksi berhasil ke database
+2024-11-26 08:40:36-Tampilkan data ke Frame FTransit
+2024-11-26 08:40:36-Koneksi berhasil ke database
+2024-11-26 08:40:36-Tampilkan data ke Frame FMain
+2024-11-26 08:40:36-Koneksi berhasil ke database
+2024-11-26 08:40:36-ComboBox berhasil dimuat dengan data.
+2024-11-26 08:40:39-Koneksi berhasil ke database
+2024-11-26 08:40:39-Tampilkan data ke Frame FTransit
+2024-11-26 08:40:39-Koneksi berhasil ke database
+2024-11-26 08:40:39-Tampilkan data ke Frame FMain
+2024-11-26 08:40:39-Koneksi berhasil ke database
+2024-11-26 08:40:39-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:20:36-Koneksi berhasil ke database
+2024-11-26 09:20:36-Tampilkan data ke Frame FTransit
+2024-11-26 09:20:37-Koneksi berhasil ke database
+2024-11-26 09:20:37-Tampilkan data ke Frame FMain
+2024-11-26 09:20:37-Koneksi berhasil ke database
+2024-11-26 09:20:37-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:20:48-Koneksi berhasil ke database
+2024-11-26 09:20:48-Tampilkan data ke Frame FTransit
+2024-11-26 09:20:48-Koneksi berhasil ke database
+2024-11-26 09:20:48-Tampilkan data ke Frame FMain
+2024-11-26 09:20:48-Koneksi berhasil ke database
+2024-11-26 09:20:48-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:20:52-Koneksi berhasil ke database
+2024-11-26 09:20:52-Tampilkan data ke Frame FTransit
+2024-11-26 09:20:52-Koneksi berhasil ke database
+2024-11-26 09:20:52-Tampilkan data ke Frame FMain
+2024-11-26 09:20:52-Koneksi berhasil ke database
+2024-11-26 09:20:52-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:21:41-Koneksi berhasil ke database
+2024-11-26 09:21:41-Tampilkan data ke Frame FTransit
+2024-11-26 09:21:41-Koneksi berhasil ke database
+2024-11-26 09:21:41-Tampilkan data ke Frame FMain
+2024-11-26 09:21:41-Koneksi berhasil ke database
+2024-11-26 09:21:41-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:21:44-Koneksi berhasil ke database
+2024-11-26 09:21:44-Tampilkan data ke Frame FTransit
+2024-11-26 09:21:44-Koneksi berhasil ke database
+2024-11-26 09:21:44-Tampilkan data ke Frame FMain
+2024-11-26 09:21:44-Koneksi berhasil ke database
+2024-11-26 09:21:44-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:21:47-Koneksi berhasil ke database
+2024-11-26 09:21:47-Tampilkan data ke Frame FTransit
+2024-11-26 09:21:47-Koneksi berhasil ke database
+2024-11-26 09:21:47-Tampilkan data ke Frame FMain
+2024-11-26 09:21:47-Koneksi berhasil ke database
+2024-11-26 09:21:47-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:21:49-Koneksi berhasil ke database
+2024-11-26 09:21:49-Tampilkan data ke Frame FTransit
+2024-11-26 09:21:49-Koneksi berhasil ke database
+2024-11-26 09:21:49-Tampilkan data ke Frame FMain
+2024-11-26 09:21:49-Koneksi berhasil ke database
+2024-11-26 09:21:49-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:22:41-Koneksi berhasil ke database
+2024-11-26 09:22:41-Tampilkan data ke Frame FTransit
+2024-11-26 09:22:41-Koneksi berhasil ke database
+2024-11-26 09:22:41-Tampilkan data ke Frame FMain
+2024-11-26 09:22:41-Koneksi berhasil ke database
+2024-11-26 09:22:41-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:22:45-Koneksi berhasil ke database
+2024-11-26 09:22:45-Tampilkan data ke Frame FTransit
+2024-11-26 09:22:45-Koneksi berhasil ke database
+2024-11-26 09:22:45-Tampilkan data ke Frame FMain
+2024-11-26 09:22:45-Koneksi berhasil ke database
+2024-11-26 09:22:45-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:22:47-Koneksi berhasil ke database
+2024-11-26 09:22:47-Tampilkan data ke Frame FTransit
+2024-11-26 09:22:47-Koneksi berhasil ke database
+2024-11-26 09:22:47-Tampilkan data ke Frame FMain
+2024-11-26 09:22:47-Koneksi berhasil ke database
+2024-11-26 09:22:47-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:23:09-Koneksi berhasil ke database
+2024-11-26 09:23:10-Tampilkan data ke Frame FTransit
+2024-11-26 09:23:10-Koneksi berhasil ke database
+2024-11-26 09:23:10-Tampilkan data ke Frame FMain
+2024-11-26 09:23:10-Koneksi berhasil ke database
+2024-11-26 09:23:10-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:23:13-Koneksi berhasil ke database
+2024-11-26 09:23:13-Tampilkan data ke Frame FTransit
+2024-11-26 09:23:13-Koneksi berhasil ke database
+2024-11-26 09:23:13-Tampilkan data ke Frame FMain
+2024-11-26 09:23:13-Koneksi berhasil ke database
+2024-11-26 09:23:13-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:28:03-Koneksi berhasil ke database
+2024-11-26 09:28:03-Tampilkan data ke Frame FTransit
+2024-11-26 09:28:03-Koneksi berhasil ke database
+2024-11-26 09:28:03-Tampilkan data ke Frame FMain
+2024-11-26 09:28:03-Koneksi berhasil ke database
+2024-11-26 09:28:03-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:28:07-Koneksi berhasil ke database
+2024-11-26 09:28:07-Tampilkan data ke Frame FTransit
+2024-11-26 09:28:07-Koneksi berhasil ke database
+2024-11-26 09:28:07-Tampilkan data ke Frame FMain
+2024-11-26 09:28:07-Koneksi berhasil ke database
+2024-11-26 09:28:07-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:29:00-Koneksi berhasil ke database
+2024-11-26 09:29:00-Tampilkan data ke Frame FTransit
+2024-11-26 09:29:00-Koneksi berhasil ke database
+2024-11-26 09:29:00-Tampilkan data ke Frame FMain
+2024-11-26 09:29:00-Koneksi berhasil ke database
+2024-11-26 09:29:00-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:29:05-Koneksi berhasil ke database
+2024-11-26 09:29:05-Tampilkan data ke Frame FTransit
+2024-11-26 09:29:05-Koneksi berhasil ke database
+2024-11-26 09:29:05-Tampilkan data ke Frame FMain
+2024-11-26 09:29:05-Koneksi berhasil ke database
+2024-11-26 09:29:05-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:29:08-Koneksi berhasil ke database
+2024-11-26 09:29:08-Tampilkan data ke Frame FTransit
+2024-11-26 09:29:08-Koneksi berhasil ke database
+2024-11-26 09:29:08-Tampilkan data ke Frame FMain
+2024-11-26 09:29:08-Koneksi berhasil ke database
+2024-11-26 09:29:08-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:29:24-Koneksi berhasil ke database
+2024-11-26 09:29:24-Tampilkan data ke Frame FTransit
+2024-11-26 09:29:24-Koneksi berhasil ke database
+2024-11-26 09:29:24-Tampilkan data ke Frame FMain
+2024-11-26 09:29:24-Koneksi berhasil ke database
+2024-11-26 09:29:24-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:30:16-Koneksi berhasil ke database
+2024-11-26 09:30:16-Tampilkan data ke Frame FTransit
+2024-11-26 09:30:16-Koneksi berhasil ke database
+2024-11-26 09:30:16-Tampilkan data ke Frame FMain
+2024-11-26 09:30:17-Koneksi berhasil ke database
+2024-11-26 09:30:17-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:30:21-Koneksi berhasil ke database
+2024-11-26 09:30:21-Tampilkan data ke Frame FTransit
+2024-11-26 09:30:21-Koneksi berhasil ke database
+2024-11-26 09:30:21-Tampilkan data ke Frame FMain
+2024-11-26 09:30:21-Koneksi berhasil ke database
+2024-11-26 09:30:21-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:31:19-Koneksi berhasil ke database
+2024-11-26 09:31:19-Tampilkan data ke Frame FTransit
+2024-11-26 09:31:19-Koneksi berhasil ke database
+2024-11-26 09:31:19-Tampilkan data ke Frame FMain
+2024-11-26 09:31:19-Koneksi berhasil ke database
+2024-11-26 09:31:19-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:31:23-Koneksi berhasil ke database
+2024-11-26 09:31:23-Tampilkan data ke Frame FTransit
+2024-11-26 09:31:23-Koneksi berhasil ke database
+2024-11-26 09:31:23-Tampilkan data ke Frame FMain
+2024-11-26 09:31:23-Koneksi berhasil ke database
+2024-11-26 09:31:23-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:39:35-Koneksi berhasil ke database
+2024-11-26 09:39:35-Tampilkan data ke Frame FTransit
+2024-11-26 09:39:35-Koneksi berhasil ke database
+2024-11-26 09:39:35-Tampilkan data ke Frame FMain
+2024-11-26 09:39:35-Koneksi berhasil ke database
+2024-11-26 09:39:35-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:39:45-Koneksi berhasil ke database
+2024-11-26 09:39:45-Tampilkan data ke Frame FTransit
+2024-11-26 09:39:45-Koneksi berhasil ke database
+2024-11-26 09:39:45-Tampilkan data ke Frame FTransit
+2024-11-26 09:39:58-Koneksi berhasil ke database
+2024-11-26 09:39:58-Tampilkan data ke Frame FTransit
+2024-11-26 09:39:59-Koneksi berhasil ke database
+2024-11-26 09:39:59-Tampilkan data ke Frame FMain
+2024-11-26 09:39:59-Koneksi berhasil ke database
+2024-11-26 09:39:59-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:09-Koneksi berhasil ke database
+2024-11-26 09:40:09-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:09-Koneksi berhasil ke database
+2024-11-26 09:40:09-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:11-Koneksi berhasil ke database
+2024-11-26 09:40:11-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:11-Koneksi berhasil ke database
+2024-11-26 09:40:11-Tampilkan data ke Frame FMain
+2024-11-26 09:40:11-Koneksi berhasil ke database
+2024-11-26 09:40:11-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:11-Koneksi berhasil ke database
+2024-11-26 09:40:11-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:11-Koneksi berhasil ke database
+2024-11-26 09:40:11-Tampilkan data ke Frame FMain
+2024-11-26 09:40:11-Koneksi berhasil ke database
+2024-11-26 09:40:11-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:12-Koneksi berhasil ke database
+2024-11-26 09:40:12-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:12-Koneksi berhasil ke database
+2024-11-26 09:40:12-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:13-Koneksi berhasil ke database
+2024-11-26 09:40:13-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:13-Koneksi berhasil ke database
+2024-11-26 09:40:13-Tampilkan data ke Frame FMain
+2024-11-26 09:40:13-Koneksi berhasil ke database
+2024-11-26 09:40:13-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:13-Koneksi berhasil ke database
+2024-11-26 09:40:13-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:13-Koneksi berhasil ke database
+2024-11-26 09:40:13-Tampilkan data ke Frame FMain
+2024-11-26 09:40:13-Koneksi berhasil ke database
+2024-11-26 09:40:13-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:19-Koneksi berhasil ke database
+2024-11-26 09:40:19-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:21-Koneksi berhasil ke database
+2024-11-26 09:40:21-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:21-Koneksi berhasil ke database
+2024-11-26 09:40:21-Tampilkan data ke Frame FMain
+2024-11-26 09:40:21-Koneksi berhasil ke database
+2024-11-26 09:40:21-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:21-Koneksi berhasil ke database
+2024-11-26 09:40:21-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:21-Koneksi berhasil ke database
+2024-11-26 09:40:21-Tampilkan data ke Frame FMain
+2024-11-26 09:40:21-Koneksi berhasil ke database
+2024-11-26 09:40:21-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:23-Koneksi berhasil ke database
+2024-11-26 09:40:23-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:24-Koneksi berhasil ke database
+2024-11-26 09:40:24-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:24-Koneksi berhasil ke database
+2024-11-26 09:40:24-Tampilkan data ke Frame FMain
+2024-11-26 09:40:24-Koneksi berhasil ke database
+2024-11-26 09:40:24-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:24-Koneksi berhasil ke database
+2024-11-26 09:40:24-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:24-Koneksi berhasil ke database
+2024-11-26 09:40:24-Tampilkan data ke Frame FMain
+2024-11-26 09:40:24-Koneksi berhasil ke database
+2024-11-26 09:40:24-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:26-Koneksi berhasil ke database
+2024-11-26 09:40:26-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:27-Koneksi berhasil ke database
+2024-11-26 09:40:27-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:27-Koneksi berhasil ke database
+2024-11-26 09:40:27-Tampilkan data ke Frame FMain
+2024-11-26 09:40:27-Koneksi berhasil ke database
+2024-11-26 09:40:27-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:40:29-Koneksi berhasil ke database
+2024-11-26 09:40:29-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:34-Koneksi berhasil ke database
+2024-11-26 09:40:34-Tampilkan data ke Frame FTransit
+2024-11-26 09:40:34-Koneksi berhasil ke database
+2024-11-26 09:40:34-Tampilkan data ke Frame FMain
+2024-11-26 09:40:34-Koneksi berhasil ke database
+2024-11-26 09:40:34-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:45:11-Koneksi berhasil ke database
+2024-11-26 09:45:14-Koneksi berhasil ke database
+2024-11-26 09:45:14-Tampilkan data ke Frame FTransit
+2024-11-26 09:45:14-Koneksi berhasil ke database
+2024-11-26 09:45:14-Tampilkan data ke Frame FMain
+2024-11-26 09:45:14-Koneksi berhasil ke database
+2024-11-26 09:45:14-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:45:42-Koneksi berhasil ke database
+2024-11-26 09:45:43-Penyimpanan Data Berhasil dengan NIM fufufafa123
+2024-11-26 09:45:43-Koneksi berhasil ke database
+2024-11-26 09:45:43-Tampilkan data ke Frame FMain
+2024-11-26 09:45:51-Koneksi berhasil ke database
+2024-11-26 09:45:52-Penyimpanan Data Berhasil dengan Kategori HAHAHAHA
+2024-11-26 09:46:05-Data Berhasil Dikirim dengan Id Barang fufufafa123
+2024-11-26 09:46:21-Koneksi berhasil ke database
+2024-11-26 09:46:31-Koneksi berhasil ke database
+2024-11-26 09:47:31-Koneksi berhasil ke database
+2024-11-26 09:47:31-Tampilkan data ke Frame FTransit
+2024-11-26 09:47:31-Koneksi berhasil ke database
+2024-11-26 09:47:31-Tampilkan data ke Frame FMain
+2024-11-26 09:47:31-Koneksi berhasil ke database
+2024-11-26 09:47:31-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:47:32-Koneksi berhasil ke database
+2024-11-26 09:47:32-Tampilkan data ke Frame FTransit
+2024-11-26 09:48:04-Koneksi berhasil ke database
+2024-11-26 09:48:04-Tampilkan data ke Frame FTransit
+2024-11-26 09:48:04-Koneksi berhasil ke database
+2024-11-26 09:48:04-Tampilkan data ke Frame FMain
+2024-11-26 09:48:04-Koneksi berhasil ke database
+2024-11-26 09:48:04-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:48:11-Data Berhasil Dikirim dengan Id Barang fufufafa123
+2024-11-26 09:48:20-Koneksi berhasil ke database
+2024-11-26 09:51:43-Koneksi berhasil ke database
+2024-11-26 09:51:43-Tampilkan data ke Frame FTransit
+2024-11-26 09:51:43-Koneksi berhasil ke database
+2024-11-26 09:51:43-Tampilkan data ke Frame FMain
+2024-11-26 09:51:43-Koneksi berhasil ke database
+2024-11-26 09:51:43-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:51:49-Data Berhasil Dikirim dengan Id Barang fufufafa123
+2024-11-26 09:52:05-Koneksi berhasil ke database
+2024-11-26 09:54:58-Koneksi berhasil ke database
+2024-11-26 09:54:58-Tampilkan data ke Frame FTransit
+2024-11-26 09:54:58-Koneksi berhasil ke database
+2024-11-26 09:54:58-Tampilkan data ke Frame FMain
+2024-11-26 09:54:58-Koneksi berhasil ke database
+2024-11-26 09:54:58-ComboBox berhasil dimuat dengan data.
+2024-11-26 09:55:04-Data Berhasil Dikirim dengan Id Barang fufufafa123
+2024-11-26 09:55:14-Koneksi berhasil ke database
+2024-11-26 09:55:21-Koneksi berhasil ke database
+2024-11-26 09:55:31-Koneksi berhasil ke database
+2024-11-26 09:58:22-Koneksi berhasil ke database
+2024-11-26 09:58:22-Tampilkan data ke Frame FTransit
+2024-11-26 09:58:22-Koneksi berhasil ke database
+2024-11-26 09:58:22-Tampilkan data ke Frame FMain
+2024-11-26 09:58:22-Koneksi berhasil ke database
+2024-11-26 09:58:22-ComboBox berhasil dimuat dengan data.
+2024-11-26 10:00:32-Data Berhasil Dikirim dengan Id Barang fufufafa123
+2024-11-26 10:01:02-Koneksi berhasil ke database
+2024-11-26 10:03:53-Koneksi berhasil ke database
+2024-11-26 10:03:53-Tampilkan data ke Frame FTransit
+2024-11-26 10:03:53-Koneksi berhasil ke database
+2024-11-26 10:03:53-Tampilkan data ke Frame FMain
+2024-11-26 10:03:53-Koneksi berhasil ke database
+2024-11-26 10:03:53-ComboBox berhasil dimuat dengan data.
+2024-11-26 10:03:59-Data Berhasil Dikirim dengan Id Barang asbsajsja
+2024-11-26 10:04:10-Koneksi berhasil ke database
+2024-11-26 10:04:13-Penyimpanan Data Berhasil dengan NIM Haa123
+2024-11-26 10:04:13-Koneksi berhasil ke database
+2024-11-26 10:04:13-Tampilkan data ke Frame FTransit
+2024-11-26 10:04:24-Koneksi berhasil ke database
+2024-11-26 10:04:24-Tampilkan data ke Frame FTransit
+2024-11-26 10:04:25-Koneksi berhasil ke database
+2024-11-26 10:04:25-Tampilkan data ke Frame FMain
+2024-11-26 10:04:25-Koneksi berhasil ke database
+2024-11-26 10:04:25-ComboBox berhasil dimuat dengan data.
+2024-11-26 10:04:40-Koneksi berhasil ke database
+2024-11-26 10:04:41-Data Berhasil Diperbaharui dengan Id Barang asbsajsja
+2024-11-26 10:04:41-Koneksi berhasil ke database
+2024-11-26 10:04:41-Tampilkan data ke Frame FMain

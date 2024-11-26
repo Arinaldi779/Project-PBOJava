@@ -8,13 +8,15 @@ import java.sql.Connection;
 import java.time.Instant;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.Timer;
 import javax.swing.table.DefaultTableModel;
 import static pboproject.Config.writeLog;
+
 ;
 
 /**
  *
- * @author Makhluk Hidup
+ * @author Kelompok 5
  */
 public class FTransit extends javax.swing.JFrame {
 
@@ -27,7 +29,7 @@ public class FTransit extends javax.swing.JFrame {
         setLocationRelativeTo(null); // Agar jendela muncul di tengah layar
         load_table();
     }
-    
+
     private void bersihkan() {
         txtIdTransit.setText(null);
         txtNamaBarang.setText(null);
@@ -35,8 +37,69 @@ public class FTransit extends javax.swing.JFrame {
         txtTujuan.setText(null);
         txtIdTransit.requestFocus();
     }
-    
-     private void load_table() {
+
+    public void updateStok() {
+        try {
+             // Ambil id_barang dan stok yang diinput user
+        String idBarang = txtIdBarang.getText();
+        int stokInput = Integer.parseInt(txtStok.getText());
+        Instant timestamp = Instant.now();
+
+        // Query untuk mengambil stok dari tabel barang
+         String sqlCheck = "SELECT stok FROM barang WHERE id_barang = ?";
+        java.sql.Connection conn = Config.configDB();
+        java.sql.PreparedStatement pstCheck = conn.prepareStatement(sqlCheck);
+        pstCheck.setString(1, idBarang); // Gunakan placeholder dan set parameter
+        java.sql.ResultSet rs = pstCheck.executeQuery();
+
+        // Periksa apakah barang ditemukan
+        if (rs.next()) {
+            int stokDB = rs.getInt("stok"); // Ambil stok dari database
+
+            // Bandingkan stok database dengan stok input
+            if (stokDB < stokInput) {
+                // Stok tidak mencukupi
+                JOptionPane.showMessageDialog(null, "Stok tidak mencukupi! Stok tersedia: " + stokDB);
+            } else {
+                // Stok mencukupi, lanjutkan pengurangan stok
+                String sqlUpdate = "UPDATE barang SET stok = stok - ? WHERE id_barang = ?";
+                java.sql.PreparedStatement pstUpdate = conn.prepareStatement(sqlUpdate);
+                // Set parameter ke dalam query
+                pstUpdate.setInt(1, stokInput);  // Placeholder pertama untuk stok
+                pstUpdate.setString(2, idBarang); // Placeholder kedua untuk id_barang
+
+                pstUpdate.executeUpdate(); // Gunakan executeUpdate untuk UPDATE query
+
+                JOptionPane.showMessageDialog(null, "Stok berhasil diperbarui.");
+
+                    JOptionPane.showMessageDialog(null, "Stok berhasil diperbarui.");
+                    String sql = "INSERT INTO transaksi VALUES "
+                            + "('" + txtIdTransit.getText()
+                            + "','" + txtIdBarang.getText()
+                            + "','" + timestamp
+                            + "','" + txtTujuan.getText()
+                            + "','" + txtStok.getText() + "')";
+                    java.sql.PreparedStatement pst = conn.prepareStatement(sql);
+                    pst.execute();
+                    JOptionPane.showMessageDialog(null, "Penyimpanan Data Berhasil");
+                    writeLog("Penyimpanan Data Berhasil dengan NIM " + txtIdTransit.getText());
+                    load_table();
+                    bersihkan();
+                }
+            } else {
+                // Barang tidak ditemukan
+                JOptionPane.showMessageDialog(null, "Barang dengan ID " + idBarang + " tidak ditemukan!");
+            }
+
+            // Tutup koneksi
+            rs.close();
+            pstCheck.close();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+        }
+    }
+
+    private void load_table() {
 // membuat tampilan model tabel
         DefaultTableModel model = new DefaultTableModel();
         model.addColumn("NO");
@@ -46,7 +109,6 @@ public class FTransit extends javax.swing.JFrame {
         model.addColumn("Tujuan");
         model.addColumn("Tanggal Transit");
         model.addColumn("Stok");
-        model.addColumn("ID Barang");
 
         //menampilkan data database kedalam tabel
         try {
@@ -57,7 +119,7 @@ public class FTransit extends javax.swing.JFrame {
             java.sql.ResultSet res = stm.executeQuery(sql);
             while (res.next()) {
                 model.addRow(new Object[]{no++, res.getString(1), res.getString(2),
-                    res.getString(3), res.getString(4), res.getString(5), res.getString(6), res.getString(7)});
+                    res.getString(3), res.getString(4), res.getString(5), res.getString(6)});
             }
             tblTransit.setModel(model);
             writeLog("Tampilkan data ke Frame " + getClass().getSimpleName());
@@ -69,13 +131,36 @@ public class FTransit extends javax.swing.JFrame {
     public void setDataId(JTextField data) {
         txtIdBarang.setText(data.getText());
     }
-    
+
     public void setDataNama(JTextField data) {
         txtNamaBarang.setText(data.getText());
     }
 
     public void setDataStok(JTextField data) {
         txtStok.setText(data.getText());
+    }
+
+//     private void smoothTransition() {
+//        // Buat Timer untuk Fade Out
+//        Timer fadeOutTimer = new Timer(50, null); // Delay setiap frame 50ms
+//        fadeOutTimer.addActionListener(e -> {
+//            float opacity = getOpacity(); // Ambil nilai transparansi saat ini
+//            if (opacity > 0.1f) {
+//                setOpacity(opacity - 0.1f); // Kurangi transparansi
+//            } else {
+//                fadeOutTimer.stop(); // Hentikan fade out
+//                goToMain(); // Pindah ke halaman berikutnya
+//            }
+//        });
+//        fadeOutTimer.start(); // Mulai fade out
+//    }
+    private void goToMain() {
+        // Panggil frame baru
+        FMain tabMain = new FMain();
+        tabMain.setVisible(true);
+
+        // Tutup halaman saat ini
+        dispose();
     }
 
     /**
@@ -102,9 +187,8 @@ public class FTransit extends javax.swing.JFrame {
         btTransit = new javax.swing.JButton();
         btHapusTransit = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        btEditTransit = new javax.swing.JButton();
-        txtIdBarang = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        txtIdBarang = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -145,9 +229,18 @@ public class FTransit extends javax.swing.JFrame {
         jPanel1.add(btLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 445, 110, 37));
 
         jLabel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 130, 80));
 
+        jLabel3.setBackground(new java.awt.Color(255, 255, 204));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 204));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/transit.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel3.setOpaque(true);
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 130, 80));
 
         jLabel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -205,7 +298,7 @@ public class FTransit extends javax.swing.JFrame {
                 btHapusTransitActionPerformed(evt);
             }
         });
-        jPanel1.add(btHapusTransit, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, -1, -1));
+        jPanel1.add(btHapusTransit, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 204));
         jButton2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
@@ -216,25 +309,14 @@ public class FTransit extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, -1, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, -1, -1));
 
-        btEditTransit.setBackground(new java.awt.Color(51, 255, 0));
-        btEditTransit.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
-        btEditTransit.setForeground(new java.awt.Color(0, 0, 0));
-        btEditTransit.setText("Edit");
-        btEditTransit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btEditTransitActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btEditTransit, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Form Transit.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 512));
 
         txtIdBarang.setEditable(false);
         txtIdBarang.setOpaque(true);
         jPanel1.add(txtIdBarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 100, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Form Transit.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 512));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 510));
 
@@ -263,12 +345,10 @@ public class FTransit extends javax.swing.JFrame {
         String namaBarang = tblTransit.getValueAt(baris, 2).toString();
         String tujuan = tblTransit.getValueAt(baris, 5).toString();
         String stok = tblTransit.getValueAt(baris, 6).toString();
-        String idBarang = tblTransit.getValueAt(baris, 7).toString();
         txtIdTransit.setText(idTransit);
         txtNamaBarang.setText(namaBarang);
         txtTujuan.setText(tujuan);
         txtStok.setText(stok);
-        txtIdBarang.setText(idBarang);
         txtNamaBarang.requestFocus();
     }//GEN-LAST:event_tblTransitMouseClicked
 
@@ -282,21 +362,8 @@ public class FTransit extends javax.swing.JFrame {
 
     private void btTransitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTransitActionPerformed
         // TODO add your handling code here:
-         Instant timestamp = Instant.now();         
-         try {
-            String sql = "INSERT INTO transaksi VALUES "
-                    + "('" + txtIdTransit.getText()
-                    + "','" + txtIdBarang.getText()
-                    + "','" + timestamp
-                    + "','" + txtTujuan.getText()
-                    + "','" + txtStok.getText() + "')";
-            java.sql.Connection conn = (Connection) Config.configDB();
-            java.sql.PreparedStatement pst = conn.prepareStatement(sql);
-            pst.execute();
-            JOptionPane.showMessageDialog(null, "Penyimpanan Data Berhasil");
-            writeLog("Penyimpanan Data Berhasil dengan NIM " + txtIdTransit.getText());
-            load_table();
-            bersihkan();
+        try {
+            updateStok();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, e.getMessage());
             writeLog("Data gagal Dikirim : " + e.getMessage());
@@ -310,7 +377,7 @@ public class FTransit extends javax.swing.JFrame {
 
     private void btHapusTransitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btHapusTransitActionPerformed
         // TODO add your handling code here:
-        
+
         try {
             if ("".equals(txtIdTransit.getText())) {
                 JOptionPane.showMessageDialog(this, "Isikan Id Transit terlebih dahulu");
@@ -337,33 +404,15 @@ public class FTransit extends javax.swing.JFrame {
         bersihkan();
     }//GEN-LAST:event_btHapusTransitActionPerformed
 
-    private void btEditTransitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEditTransitActionPerformed
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
-        
         try {
-            if ("".equals(txtIdTransit.getText())) {
-                JOptionPane.showMessageDialog(this, "Isikan Id Transit terlebih dahulu");
-            } else {
-                String sql = "UPDATE transaksi SET "
-                        + "id_transaksi= '" + txtIdTransit.getText() + "', "
-                        + "id_barang = '" + txtIdBarang.getText() + "', "
-                        + "tujuan = '" + txtTujuan.getText() + "', "
-                        + "stok = '" + txtStok.getText() + "' "
-                        + "WHERE id_transaksi = '" + txtIdTransit.getText() + "'";
-                java.sql.Connection conn = (Connection) Config.configDB();
-                java.sql.PreparedStatement pst = conn.prepareStatement(sql);
-                pst.execute();
-                JOptionPane.showMessageDialog(null, "Data Berhasil Diperbaharui");
-                writeLog("Data Berhasil Diperbaharui dengan Id Transit " + txtIdTransit.getText());
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, e.getMessage());
-            writeLog("Data gagal disimpan : " + e.getMessage());
+            Thread.sleep(300); // Delay 2 detik (2000 ms)
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        load_table();
-        bersihkan();
-
-    }//GEN-LAST:event_btEditTransitActionPerformed
+        goToMain();
+    }//GEN-LAST:event_jLabel5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -401,7 +450,6 @@ public class FTransit extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btEditTransit;
     private javax.swing.JButton btHapusTransit;
     private javax.swing.JButton btLogout;
     private javax.swing.JButton btTransit;

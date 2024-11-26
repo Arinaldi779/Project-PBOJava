@@ -13,6 +13,7 @@ import javax.swing.table.DefaultTableModel;
 import static pboproject.Config.writeLog;
 import pboproject.Kategori;
 import java.time.Instant;
+import javax.swing.Timer;
 
 /**
  *
@@ -24,6 +25,8 @@ public class FMain extends javax.swing.JFrame {
      * Creates new form FMain
      */
     ArrayList<Kategori> arrKategori = new ArrayList<>();
+
+    private final FTransit formTransit;
 
     private void load_table() {
 // membuat tampilan model tabel
@@ -55,6 +58,7 @@ public class FMain extends javax.swing.JFrame {
     }
 
     public FMain() {
+        this.formTransit = new FTransit();
         setUndecorated(true);  // Menghilangkan dekorasi jendela (termasuk tombol close, minimize, dan maximize)
         initComponents();
         setLocationRelativeTo(null); // Agar jendela muncul di tengah layar
@@ -92,6 +96,30 @@ public class FMain extends javax.swing.JFrame {
         txtHarga.setText(null);
         cbType.setSelectedIndex(0);
         txtIdBarang.requestFocus();
+    }
+
+//    private void smoothTransition() {
+//        // Buat Timer untuk Fade Out
+//        Timer fadeOutTimer = new Timer(50, null); // Delay setiap frame 50ms
+//        fadeOutTimer.addActionListener(e -> {
+//            float opacity = getOpacity(); // Ambil nilai transparansi saat ini
+//            if (opacity > 0.1f) {
+//                setOpacity(opacity - 0.1f); // Kurangi transparansi
+//            } else {
+//                fadeOutTimer.stop(); // Hentikan fade out
+//                goToTransit(); // Pindah ke halaman berikutnya
+//            }
+//        });
+//        fadeOutTimer.start(); // Mulai fade out
+//    }
+
+    private void goToTransit() {
+        // Panggil frame baru
+        FTransit tabTransit = new FTransit();
+        tabTransit.setVisible(true);
+
+        // Tutup halaman saat ini
+        dispose();
     }
 
     // Metode untuk mendapatkan ID kategori berdasarkan nama kategori
@@ -145,7 +173,7 @@ public class FMain extends javax.swing.JFrame {
         txtHarga = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblBarang = new javax.swing.JTable();
-        jLabel3 = new javax.swing.JLabel();
+        lblTransit = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         btLogout = new javax.swing.JButton();
@@ -154,6 +182,7 @@ public class FMain extends javax.swing.JFrame {
         btEdit = new javax.swing.JButton();
         btClear = new javax.swing.JButton();
         btTambahKategori = new javax.swing.JButton();
+        txtKirim = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -208,13 +237,24 @@ public class FMain extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 560, 160));
 
-        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 130, 80));
+        lblTransit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        lblTransit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblTransitMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lblTransit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 130, 80));
 
         jLabel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 130, 80));
 
-        jLabel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jLabel5.setBackground(new java.awt.Color(255, 255, 204));
+        jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 3)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/computer.png"))); // NOI18N
+        jLabel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 204), 10, true));
+        jLabel5.setOpaque(true);
+        jLabel5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 130, 80));
 
         btLogout.setBackground(new java.awt.Color(0, 102, 153));
@@ -227,7 +267,7 @@ public class FMain extends javax.swing.JFrame {
                 btLogoutActionPerformed(evt);
             }
         });
-        jPanel1.add(btLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 445, 110, 35));
+        jPanel1.add(btLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 445, 110, 37));
 
         btSubmit.setBackground(new java.awt.Color(255, 255, 204));
         btSubmit.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
@@ -244,6 +284,11 @@ public class FMain extends javax.swing.JFrame {
         btHapus.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
         btHapus.setForeground(new java.awt.Color(0, 0, 0));
         btHapus.setText("Hapus");
+        btHapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btHapusActionPerformed(evt);
+            }
+        });
         jPanel1.add(btHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, -1, -1));
 
         btEdit.setBackground(new java.awt.Color(255, 255, 204));
@@ -255,7 +300,7 @@ public class FMain extends javax.swing.JFrame {
                 btEditActionPerformed(evt);
             }
         });
-        jPanel1.add(btEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, -1, -1));
+        jPanel1.add(btEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(435, 290, -1, -1));
 
         btClear.setBackground(new java.awt.Color(255, 255, 204));
         btClear.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
@@ -266,7 +311,7 @@ public class FMain extends javax.swing.JFrame {
                 btClearActionPerformed(evt);
             }
         });
-        jPanel1.add(btClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, -1, -1));
+        jPanel1.add(btClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, -1, -1));
 
         btTambahKategori.setBackground(new java.awt.Color(255, 255, 204));
         btTambahKategori.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/1564491_add_create_new_plus_icon (1) (1) (1).png"))); // NOI18N
@@ -276,6 +321,17 @@ public class FMain extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btTambahKategori, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, 40, 40));
+
+        txtKirim.setBackground(new java.awt.Color(51, 255, 0));
+        txtKirim.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
+        txtKirim.setForeground(new java.awt.Color(0, 0, 0));
+        txtKirim.setText("Kirim");
+        txtKirim.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtKirimActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtKirim, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Form Barang1.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1920, 1080));
@@ -393,6 +449,73 @@ public class FMain extends javax.swing.JFrame {
         txtNamaBarang.requestFocus();
     }//GEN-LAST:event_tblBarangMouseClicked
 
+    private void btHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btHapusActionPerformed
+        // TODO add your handling code here:
+        try {
+            if ("".equals(txtIdBarang.getText())) {
+                JOptionPane.showMessageDialog(this, "Isikan Id Barang terlebih dahulu");
+            } else {
+                int response = JOptionPane.showConfirmDialog(this,
+                        "Apakah anda yakin ingin Menghapus data",
+                        "Konfirmasi Hapus",
+                        JOptionPane.YES_NO_OPTION,
+                        JOptionPane.WARNING_MESSAGE);
+                if (response == JOptionPane.YES_OPTION) {
+                    String sql = "DELETE FROM barang WHERE id_barang='" + txtIdBarang.getText() + "'";
+                    java.sql.Connection conn = (Connection) Config.configDB();
+                    java.sql.PreparedStatement pst = conn.prepareStatement(sql);
+                    pst.execute();
+                    JOptionPane.showMessageDialog(this, "Data Berhasil Dihapus dengan id Barang " + txtIdBarang.getText());
+                    writeLog("Data Berhasil Dihapus dengan Id Barang " + txtIdBarang.getText());
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+            writeLog("Data gagal dihapus : " + e.getMessage());
+        }
+        load_table();
+        bersihkan();
+    }//GEN-LAST:event_btHapusActionPerformed
+
+    private void txtKirimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtKirimActionPerformed
+        // TODO add your handling code here:
+
+        try {
+            if ("".equals(txtIdBarang.getText())) {
+                JOptionPane.showMessageDialog(this, "Isikan Id Barang terlebih dahulu");
+            } else {
+                int response = JOptionPane.showConfirmDialog(this,
+                        "Apakah anda yakin ingin Mengirim data",
+                        "Konfirmasi Kirim",
+                        JOptionPane.YES_NO_OPTION,
+                        JOptionPane.INFORMATION_MESSAGE);
+                if (response == JOptionPane.YES_OPTION) {
+                    formTransit.setDataId(txtIdBarang);
+                    formTransit.setDataNama(txtNamaBarang);
+                    formTransit.setDataStok(txtStok);
+                    JOptionPane.showMessageDialog(this, "Data Berhasil Dikirim dengan id Barang " + txtIdBarang.getText());
+                    writeLog("Data Berhasil Dikirim dengan Id Barang " + txtIdBarang.getText());
+                    formTransit.setVisible(true);
+                    dispose();
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+            writeLog("Data gagal Dikirim : " + e.getMessage());
+        }
+
+    }//GEN-LAST:event_txtKirimActionPerformed
+
+    private void lblTransitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblTransitMouseClicked
+        // TODO add your handling code here:
+        try {
+            Thread.sleep(300); // Delay 2 detik (2000 ms)
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        goToTransit();
+    }//GEN-LAST:event_lblTransitMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -437,14 +560,15 @@ public class FMain extends javax.swing.JFrame {
     private javax.swing.JButton btTambahKategori;
     private javax.swing.JComboBox<String> cbType;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblTransit;
     private javax.swing.JTable tblBarang;
     private javax.swing.JTextField txtHarga;
     private javax.swing.JTextField txtIdBarang;
+    private javax.swing.JButton txtKirim;
     private javax.swing.JTextField txtNamaBarang;
     private javax.swing.JTextField txtStok;
     // End of variables declaration//GEN-END:variables
