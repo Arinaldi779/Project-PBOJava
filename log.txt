@@ -924,3 +924,114 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2024-11-26 10:04:41-Data Berhasil Diperbaharui dengan Id Barang asbsajsja
 2024-11-26 10:04:41-Koneksi berhasil ke database
 2024-11-26 10:04:41-Tampilkan data ke Frame FMain
+2024-11-26 13:34:35-Koneksi berhasil ke database
+2024-11-26 13:34:39-Koneksi berhasil ke database
+2024-11-26 13:34:39-Tampilkan data ke Frame FTransit
+2024-11-26 13:34:40-Koneksi berhasil ke database
+2024-11-26 13:34:40-Tampilkan data ke Frame FMain
+2024-11-26 13:34:40-Koneksi berhasil ke database
+2024-11-26 13:34:40-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:34:46-Koneksi berhasil ke database
+2024-11-26 13:34:46-Tampilkan data ke Frame FTransit
+2024-11-26 13:34:48-Koneksi berhasil ke database
+2024-11-26 13:34:48-Tampilkan data ke Frame FTransit
+2024-11-26 13:34:48-Koneksi berhasil ke database
+2024-11-26 13:34:48-Tampilkan data ke Frame FMain
+2024-11-26 13:34:48-Koneksi berhasil ke database
+2024-11-26 13:34:48-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:34:52-Koneksi berhasil ke database
+2024-11-26 13:34:52-Tampilkan data ke Frame FTransit
+2024-11-26 13:35:03-Koneksi berhasil ke database
+2024-11-26 13:35:03-Tampilkan data ke Frame FTransit
+2024-11-26 13:35:03-Koneksi berhasil ke database
+2024-11-26 13:35:03-Tampilkan data ke Frame FMain
+2024-11-26 13:35:03-Koneksi berhasil ke database
+2024-11-26 13:35:03-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:35:05-Koneksi berhasil ke database
+2024-11-26 13:35:05-Tampilkan data ke Frame FTransit
+2024-11-26 13:35:07-Koneksi berhasil ke database
+2024-11-26 13:35:07-Tampilkan data ke Frame FTransit
+2024-11-26 13:35:07-Koneksi berhasil ke database
+2024-11-26 13:35:07-Tampilkan data ke Frame FMain
+2024-11-26 13:35:07-Koneksi berhasil ke database
+2024-11-26 13:35:07-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:37:41-Koneksi berhasil ke database
+2024-11-26 13:37:41-Tampilkan data ke Frame FTransit
+2024-11-26 13:37:42-Koneksi berhasil ke database
+2024-11-26 13:37:42-Tampilkan data ke Frame FMain
+2024-11-26 13:37:42-Koneksi berhasil ke database
+2024-11-26 13:37:42-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:37:58-Koneksi berhasil ke database
+2024-11-26 13:37:59-Penyimpanan Data Berhasil dengan Kategori GGZidan
+2024-11-26 13:38:38-Koneksi berhasil ke database
+2024-11-26 13:38:38-Tampilkan data ke Frame FTransit
+2024-11-26 13:38:41-Koneksi berhasil ke database
+2024-11-26 13:38:41-Tampilkan data ke Frame FTransit
+2024-11-26 13:38:41-Koneksi berhasil ke database
+2024-11-26 13:38:41-Tampilkan data ke Frame FMain
+2024-11-26 13:38:41-Koneksi berhasil ke database
+2024-11-26 13:38:41-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:38:48-Data Berhasil Dikirim dengan Id Barang Barang3
+2024-11-26 13:39:09-Koneksi berhasil ke database
+2024-11-26 13:39:09-Tampilkan data ke Frame FTransit
+2024-11-26 13:39:09-Koneksi berhasil ke database
+2024-11-26 13:39:09-Tampilkan data ke Frame FMain
+2024-11-26 13:39:09-Koneksi berhasil ke database
+2024-11-26 13:39:09-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:39:17-Koneksi berhasil ke database
+2024-11-26 13:39:17-Tampilkan data ke Frame FTransit
+2024-11-26 13:39:20-Koneksi berhasil ke database
+2024-11-26 13:39:20-Tampilkan data ke Frame FTransit
+2024-11-26 13:39:20-Koneksi berhasil ke database
+2024-11-26 13:39:20-Tampilkan data ke Frame FMain
+2024-11-26 13:39:20-Koneksi berhasil ke database
+2024-11-26 13:39:20-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:39:30-Data Berhasil Dikirim dengan Id Barang fufufafa123
+2024-11-26 13:39:35-Koneksi berhasil ke database
+2024-11-26 13:39:35-Tampilkan data ke Frame FTransit
+2024-11-26 13:39:35-Koneksi berhasil ke database
+2024-11-26 13:39:36-Tampilkan data ke Frame FMain
+2024-11-26 13:39:36-Koneksi berhasil ke database
+2024-11-26 13:39:36-ComboBox berhasil dimuat dengan data.
+2024-11-26 13:39:46-Data Berhasil Dikirim dengan Id Barang fufufafa123
+2024-11-26 13:40:01-Koneksi berhasil ke database
+2024-11-26 13:40:05-Penyimpanan Data Berhasil dengan NIM Transit5
+2024-11-26 13:40:05-Koneksi berhasil ke database
+2024-11-26 13:40:05-Tampilkan data ke Frame FTransit
+2024-11-26 13:40:07-Koneksi berhasil ke database
+2024-11-26 13:40:07-Tampilkan data ke Frame FTransit
+2024-11-26 13:40:08-Koneksi berhasil ke database
+2024-11-26 13:40:08-Tampilkan data ke Frame FMain
+2024-11-26 13:40:08-Koneksi berhasil ke database
+2024-11-26 13:40:08-ComboBox berhasil dimuat dengan data.
+2024-11-29 13:01:03-Koneksi berhasil ke database
+2024-11-29 13:01:06-Koneksi berhasil ke database
+2024-11-29 13:01:06-Tampilkan data ke Frame FTransit
+2024-11-29 13:01:06-Koneksi berhasil ke database
+2024-11-29 13:01:06-Tampilkan data ke Frame FMain
+2024-11-29 13:01:06-Koneksi berhasil ke database
+2024-11-29 13:01:06-ComboBox berhasil dimuat dengan data.
+2024-11-29 13:01:15-Koneksi berhasil ke database
+2024-11-29 13:01:15-Tampilkan data ke Frame FTransit
+2024-11-29 13:01:26-Koneksi berhasil ke database
+2024-11-29 13:01:26-Tampilkan data ke Frame FTransit
+2024-11-29 13:01:26-Koneksi berhasil ke database
+2024-11-29 13:01:26-Tampilkan data ke Frame FMain
+2024-11-29 13:01:26-Koneksi berhasil ke database
+2024-11-29 13:01:26-ComboBox berhasil dimuat dengan data.
+2024-11-29 13:02:34-Koneksi berhasil ke database
+2024-11-29 13:02:34-Tampilkan data ke Frame FTransit
+2024-11-29 13:02:36-Koneksi berhasil ke database
+2024-11-29 13:02:36-Tampilkan data ke Frame FTransit
+2024-11-29 13:02:36-Koneksi berhasil ke database
+2024-11-29 13:02:36-Tampilkan data ke Frame FMain
+2024-11-29 13:02:36-Koneksi berhasil ke database
+2024-11-29 13:02:36-ComboBox berhasil dimuat dengan data.
+2024-11-29 13:02:42-Koneksi berhasil ke database
+2024-11-29 13:02:42-Tampilkan data ke Frame FTransit
+2024-11-29 13:02:46-Koneksi berhasil ke database
+2024-11-29 13:02:46-Tampilkan data ke Frame FTransit
+2024-11-29 13:02:46-Koneksi berhasil ke database
+2024-11-29 13:02:46-Tampilkan data ke Frame FMain
+2024-11-29 13:02:46-Koneksi berhasil ke database
+2024-11-29 13:02:46-ComboBox berhasil dimuat dengan data.

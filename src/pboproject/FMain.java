@@ -121,6 +121,15 @@ public class FMain extends javax.swing.JFrame {
         // Tutup halaman saat ini
         dispose();
     }
+    
+    private void goToAbout() {
+        // Panggil frame baru
+        FAbout tabAbout = new FAbout();
+        tabAbout.setVisible(true);
+
+        // Tutup halaman saat ini
+        dispose();
+    }
 
     // Metode untuk mendapatkan ID kategori berdasarkan nama kategori
     private int getIdKategoriByNama(String namaKategori) {
@@ -174,7 +183,7 @@ public class FMain extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblBarang = new javax.swing.JTable();
         lblTransit = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        lblAbout = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         btLogout = new javax.swing.JButton();
         btSubmit = new javax.swing.JButton();
@@ -190,8 +199,8 @@ public class FMain extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        cbType.setBackground(new java.awt.Color(255, 255, 204));
-        cbType.setForeground(new java.awt.Color(255, 255, 255));
+        cbType.setBackground(new java.awt.Color(255, 255, 102));
+        cbType.setForeground(new java.awt.Color(0, 0, 0));
         cbType.setBorder(null);
         jPanel1.add(cbType, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 147, 202, 25));
 
@@ -245,8 +254,13 @@ public class FMain extends javax.swing.JFrame {
         });
         jPanel1.add(lblTransit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 130, 80));
 
-        jLabel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 130, 80));
+        lblAbout.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        lblAbout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAboutMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lblAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 130, 80));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 204));
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 3)); // NOI18N
@@ -516,6 +530,16 @@ public class FMain extends javax.swing.JFrame {
         goToTransit();
     }//GEN-LAST:event_lblTransitMouseClicked
 
+    private void lblAboutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAboutMouseClicked
+        // TODO add your handling code here:
+        try {
+            Thread.sleep(300); // Delay 2 detik (2000 ms)
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        goToAbout();
+    }//GEN-LAST:event_lblAboutMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -560,10 +584,10 @@ public class FMain extends javax.swing.JFrame {
     private javax.swing.JButton btTambahKategori;
     private javax.swing.JComboBox<String> cbType;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblAbout;
     private javax.swing.JLabel lblTransit;
     private javax.swing.JTable tblBarang;
     private javax.swing.JTextField txtHarga;
