@@ -1,0 +1,4 @@
+email = admin@gmail.com
+password = 12345678
+
+Di halaman FMain bisa menambah barang baru dan stok, bisa di edit dan dihapus datanya. jika kategori barang yg ingin ditambahkan tidak ada, admin bisa menambahkan kategori baru. tombol kirim digunakan apabila admin akan melakukan pengiriman. Di halaman FTransit admin bisa menambahkan data dari data yg dikirim dari halaman FMain, tetapi data hanya bisa dihapus, tidak bisa diedit. Sekian terima kasih.
